@@ -10,7 +10,7 @@ public class Working {
 
     ArrayList<Employees> employees = new ArrayList<>();
 
-    Scanner input = new Scanner(System.in);
+    private Scanner input = new Scanner(System.in);
 
     public void addEmployee(){
         System.out.println("Que tipo de funcionario vai adicionar?");
@@ -18,10 +18,20 @@ public class Working {
         System.out.println("2 - Assalariado comissionado.");
         System.out.println("3 - Horista.");
 
-        int option = input.nextInt();
+        int option = input.nextInt(); input.nextLine();
 
         if(option == 1){
+            Salaried newSalaried = new Salaried();
 
+            System.out.println("Digite o nome do empregado.");
+            newSalaried.setName(input.nextLine());
+            newSalaried.setAddress();
+            System.out.println("Digite o salario mensal do empregado.");
+            newSalaried.setSalary(input.nextDouble()); input.nextLine();
+            newSalaried.setEmployeeNumber(++employeesNumbers);
+
+            employees.add(newSalaried);
+            System.out.println("Adicionado.");
         }
         else if(option == 2){
 

@@ -10,7 +10,7 @@ public interface Employees {
     boolean getSyndicateIs();
 
     void setName(String name);
-    void setAddress(String address);
+    void setAddress();
     void setType(String type);
     void setEmployeeNumber(int employeeNumber);
     void setPaymentMethod();
@@ -18,7 +18,5 @@ public interface Employees {
     void setSyndicateIs(boolean is);
     void setSyndicateFee(double fee);
     void setDiscout(int discout);
-
-    void removeEmployee(int employeeNumber);
-
+    void processPayment();
 }

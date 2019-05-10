@@ -23,7 +23,7 @@ public class Menu {
         System.out.println("0 - Encerrar sistema.");
 
         Scanner input = new Scanner(System.in);
-        int option = input.nextInt();
+        int option = input.nextInt(); input.nextLine();
 
         switch (option){
             case 1:
@@ -64,7 +64,7 @@ public class Menu {
 
         System.out.println();
         System.out.println();
-        return (option != 0 ? true : false);
+        return (option != 0);
     }
 
 

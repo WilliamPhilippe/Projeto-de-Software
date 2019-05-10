@@ -6,26 +6,28 @@ public class Salaried implements Employees {
 
     private int employeeNumber;
     private String name;
-    private String type;
+    private String type = "salaried";                    // salaried or hourly or commissioned
 
     // SYNDICATE
     private int syndicateNumber;
-    private boolean syndicateIs;
-    private double syndicateFee;
+    private boolean syndicateIs = false;
+    private double syndicateFee = 0;
 
     // PAYMENT
-    private String paymentMethod;           // monthly - weekly - twoweekly
-    private int dayOfPayment;               // se for 0, eh o ultimo dia do mes | seg 1 sex 5
-    private double salaryMonthly;
+    private String paymentMethod = "monthly";           // monthly - weekly - twoweekly
+    private int dayOfPayment = 0;               // se for 0, eh o ultimo dia do mes | seg 1 sex 5
+    private double salaryMonthly = 0;
 
     // ADDRESS
     private String addressStreet;
     private int addressNumber;
     private String addressCity;
     private String addressState;
+    public String addressCountry;
 
-    public Salaried() {
-    }
+    private Scanner input = new Scanner(System.in);
+
+    public Salaried() { }
 
     public int getEmployeeNumber() {
         return this.employeeNumber;
@@ -57,8 +59,21 @@ public class Salaried implements Employees {
         this.name = name;
     }
 
-    public void setAddress(String address) {
+    public void setAddress() {
+        System.out.println("Definir endereço.");
+        System.out.println("Rua: ");
+        this.addressStreet = input.nextLine();
+        System.out.println("Numero: ");
+        this.addressNumber = input.nextInt(); input.nextLine();
+        System.out.println("Cidade: ");
+        this.addressCity = input.nextLine();
+        System.out.println("Estado: ");
+        this.addressState = input.nextLine();
+        System.out.println("Pais: ");
+        this.addressCountry = input.nextLine();
 
+        System.out.println();
+        System.out.println("Endereco definido.");
     }
 
     public void setType(String type) {
@@ -75,7 +90,6 @@ public class Salaried implements Employees {
         System.out.println("2 - Semanalmente.");
         System.out.println("3 - Bi-semanalmente.");
 
-        Scanner input = new Scanner(System.in);
         int option = input.nextInt();
 
         switch (option){
@@ -101,6 +115,7 @@ public class Salaried implements Employees {
                 System.out.println("Opcao invalida.");
         }
 
+        input.nextLine();
         System.out.println("Agenda de pagamento alterada.");
     }
 
@@ -117,8 +132,7 @@ public class Salaried implements Employees {
         if(syndicateIs) {
             System.out.println("A taxa sindical atual eh de R$ " + this.syndicateFee + "a cada pagamento.");
             System.out.println("Digite a nova taxa sindical.");
-            Scanner input = new Scanner(System.in);
-            this.syndicateFee = input.nextInt();
+            this.syndicateFee = input.nextInt(); input.nextLine();
             System.out.println("A taxa sindical foi alterada.");
         }
         else{
@@ -131,11 +145,15 @@ public class Salaried implements Employees {
 
     }
 
-    public void removeEmployee(int employeeNumber) {
-
+    public void setSalary(double salary){
+        this.salaryMonthly = salary;
     }
 
     public void processPayment() {
 
+    }
+
+    public String toString(){
+        return "Nome: " + this.name + " Number: " + this.employeeNumber;
     }
 }

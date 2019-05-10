@@ -3,7 +3,11 @@ package com.company;
 import java.util.Scanner;
 
 public class Menu {
+
+    Working company = new Working();
+
     public boolean runMenu(){
+
         System.out.println("O que deseja fazer?");
         System.out.println("1 - Adicionar um empregado.");
         System.out.println("2 - Remover um empregado.");
@@ -19,41 +23,41 @@ public class Menu {
         System.out.println("0 - Encerrar sistema.");
 
         Scanner input = new Scanner(System.in);
-        Integer option = input.nextInt();
+        int option = input.nextInt();
 
         switch (option){
             case 1:
-
+                company.addEmployee();
                 break;
             case 2:
-
+                company.removeEmployee();
                 break;
             case 3:
-
+                company.addTimecard();
                 break;
             case 4:
-
+                company.addSales();
                 break;
             case 5:
-
+                company.addFeeService();
                 break;
             case 6:
-
+                company.changeEmployeeDetails();
                 break;
             case 7:
-
+                company.runPayments();
                 break;
             case 8:
-
+                company.setPayment();
                 break;
             case 9:
-
+                company.newPaymentCalendar();
                 break;
             case 10:
-
+                company.redo();
                 break;
             case 11:
-
+                company.undo();
                 break;
         }
 

@@ -6,15 +6,23 @@ public class Salaried implements Employees {
 
     private int employeeNumber;
     private String name;
-    private String address;
     private String type;
+
+    // SYNDICATE
     private int syndicateNumber;
     private boolean syndicateIs;
+    private double syndicateFee;
 
     // PAYMENT
     private String paymentMethod;           // monthly - weekly - twoweekly
     private int dayOfPayment;               // se for 0, eh o ultimo dia do mes | seg 1 sex 5
-    private int salaryMonthly;
+    private double salaryMonthly;
+
+    // ADDRESS
+    private String addressStreet;
+    private int addressNumber;
+    private String addressCity;
+    private String addressState;
 
     public Salaried() {
     }
@@ -27,8 +35,10 @@ public class Salaried implements Employees {
         return this.name;
     }
 
-    public String getAddress() {
-        return this.address;
+    public void getAddress() {
+        System.out.println("Rua: " + this.addressStreet);
+        System.out.println("Numero: " + this.addressNumber);
+        System.out.println(this.addressCity + " / " + this.addressState);
     }
 
     public String getType() {
@@ -48,7 +58,7 @@ public class Salaried implements Employees {
     }
 
     public void setAddress(String address) {
-        this.address = address;
+
     }
 
     public void setType(String type) {
@@ -95,14 +105,25 @@ public class Salaried implements Employees {
     }
 
     public void setSyndicateNumber(int number) {
-
+        this.syndicateNumber = number;
     }
 
     public void setSyndicateIs(boolean is) {
-
+        this.syndicateIs = is;
     }
 
-    public void setSyndicateFee(int fee) {
+    public void setSyndicateFee(double fee) {
+
+        if(syndicateIs) {
+            System.out.println("A taxa sindical atual eh de R$ " + this.syndicateFee + "a cada pagamento.");
+            System.out.println("Digite a nova taxa sindical.");
+            Scanner input = new Scanner(System.in);
+            this.syndicateFee = input.nextInt();
+            System.out.println("A taxa sindical foi alterada.");
+        }
+        else{
+            System.out.println("O empregado nao pertence a um sindicato. Cadastre-o para adicionar uma taxa.");
+        }
 
     }
 

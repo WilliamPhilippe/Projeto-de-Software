@@ -4,7 +4,7 @@ public interface Employees {
 
     int getEmployeeNumber();
     String getName();
-    String getAddress();
+    void getAddress();
     String getType();
     int getSyndicateNumber();
     boolean getSyndicateIs();
@@ -16,7 +16,7 @@ public interface Employees {
     void setPaymentMethod();
     void setSyndicateNumber(int number);
     void setSyndicateIs(boolean is);
-    void setSyndicateFee(int fee);
+    void setSyndicateFee(double fee);
     void setDiscout(int discout);
 
     void removeEmployee(int employeeNumber);

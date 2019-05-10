@@ -12,6 +12,7 @@ public class Hourly implements Employees {
     private int syndicateNumber;
     private boolean syndicateIs = false;
     private double syndicateFee = 0;
+    private double sydicateMonthlyFee = 0;
 
     // PAYMENT
     private String paymentMethod = "monthly";           // monthly - weekly - twoweekly
@@ -82,6 +83,10 @@ public class Hourly implements Employees {
     }
 
     public void setSyndicateFee(double fee) {
+
+    }
+
+    public void setSyndicateMonthlyFee(double fee) {
 
     }
 

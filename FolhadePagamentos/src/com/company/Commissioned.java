@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Salaried implements Employees {
+public class Commissioned implements Employees {
 
     private int employeeNumber;
     private String name;
@@ -14,11 +14,12 @@ public class Salaried implements Employees {
     private double syndicateFee = 0;
     private double sydicateMonthlyFee = 0;
 
-
     // PAYMENT
-    private String paymentMethod = "monthly";           // monthly - weekly - twoweekly
-    private int dayOfPayment = 0;               // se for 0, eh o ultimo dia do mes | seg 1 sex 5
+    private String paymentMethod = "twoeekly";           // monthly - weekly - twoweekly
+    private int dayOfPayment = 5;               // se for 0, eh o ultimo dia do mes | seg 1 sex 5
     private double salaryMonthly = 0;
+    private double sells = 0;
+    private double commission = 0;
     private double discount = 0;
 
     // ADDRESS
@@ -30,10 +31,8 @@ public class Salaried implements Employees {
 
     private Scanner input = new Scanner(System.in);
 
-    public Salaried() { }
-
     public int getEmployeeNumber() {
-                return this.employeeNumber;
+        return this.employeeNumber;
     }
 
     public String getName() {
@@ -131,9 +130,8 @@ public class Salaried implements Employees {
     }
 
     public void setSyndicateFee(double fee) {
-
         if(syndicateIs) {
-            System.out.println("A taxa sindical atual eh de R$ " + this.syndicateFee + "a cada pagamento.");
+            System.out.println("A taxa sindical atual eh de R$ " + this.syndicateFee + "para o proximo pagamento.");
             System.out.println("Digite a nova taxa sindical.");
             this.syndicateFee = input.nextInt(); input.nextLine();
             System.out.println("A taxa sindical foi alterada.");
@@ -141,19 +139,16 @@ public class Salaried implements Employees {
         else{
             System.out.println("O empregado nao pertence a um sindicato. Cadastre-o para adicionar uma taxa.");
         }
-
     }
 
     public void setSyndicateMonthlyFee(double fee) {
+        // apenas sera descontada no dia 30 do mes
 
+        this.sydicateMonthlyFee = fee;
     }
 
     public void setDiscout(int discout) {
-
-    }
-
-    public void setSalary(double salary){
-        this.salaryMonthly = salary;
+        this.discount = discout;
     }
 
     public void processPayment() {
@@ -162,5 +157,17 @@ public class Salaried implements Employees {
 
     public String toString(){
         return "Nome: " + this.name + " Number: " + this.employeeNumber;
+    }
+
+    public void setMonthlySalary(double salary){
+        this.salaryMonthly = salary;
+    }
+
+    public void setCommissionPercentage(double percentage){
+        this.commission = percentage;
+    }
+
+    public void addSells(double sells){
+        this.sells += sells * this.commission;
     }
 }

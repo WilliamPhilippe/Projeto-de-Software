@@ -17,6 +17,7 @@ public interface Employees {
     void setSyndicateNumber(int number);
     void setSyndicateIs(boolean is);
     void setSyndicateFee(double fee);
+    void setSyndicateMonthlyFee(double fee);
     void setDiscout(int discout);
     void processPayment();
 }

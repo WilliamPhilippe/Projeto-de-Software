@@ -63,6 +63,12 @@ public class Working {
     }
 
     public void runPayments(){
+        /* Todo:
+         * Dia 30 rodar taxas mensais do sindicato.
+         * Verificar se há taxas do sindicato a ser deduzidas.
+         * Verificar deducoes de cada funcionario.
+         */
+
 
     }
 
@@ -80,6 +86,10 @@ public class Working {
 
     public void undo(){
         
+    }
+
+    public void setSyndicateFee(){
+
     }
 
 }

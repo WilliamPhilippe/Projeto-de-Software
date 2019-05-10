@@ -20,6 +20,7 @@ public class Menu {
         System.out.println("9 - Criar nova agenda de pagamentos.");
         System.out.println("10 - Refazer.");
         System.out.println("11 - Desfazer.");
+        System.out.println("12 - Definir taxa sindical.");
         System.out.println("0 - Encerrar sistema.");
 
         Scanner input = new Scanner(System.in);
@@ -58,6 +59,9 @@ public class Menu {
                 break;
             case 11:
                 company.undo();
+                break;
+            case 12:
+                company.setSyndicateFee();
                 break;
         }
 

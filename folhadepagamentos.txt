@@ -1,0 +1,13 @@
+Comissionado:
+done	- Comissão individual | Tem que ter opção de alterar comissão
+	- Pagamento a cada 2 sextas | Pode ser alterado | Pagamento feito externamente a cada runPayment()
+
+
+Pagamentos:
+	- Lembrar de configurar para saber que é dia útil.
+
+
+Sindicato
+	- Todo dia 30 as taxas mensais sao deduzidas do proximo pagamento
+	- As taxas ocasionais sao deduzidas imediatamente.
+done	- A taxa é diferente para cada empregado | Fazer método setFee and setFeeMonthly

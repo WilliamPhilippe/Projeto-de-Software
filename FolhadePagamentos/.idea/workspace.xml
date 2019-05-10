@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="874daf6c-acd7-47c3-b636-c87fdb17ccf9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/Commissioned.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Employees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Employees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Commissioned.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Commissioned.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Hourly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Hourly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Salaried.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Salaried.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Working.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Working.java" afterDir="false" />
     </list>
@@ -40,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Working.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1406">
-              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+            <state relative-caret-position="780">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Salaried.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+            <state relative-caret-position="832">
+              <caret line="149" column="5" selection-start-line="149" selection-start-column="5" selection-end-line="149" selection-end-column="5" />
               <folding>
                 <element signature="e#4307#4308#0" expanded="true" />
                 <element signature="e#4342#4343#0" expanded="true" />
@@ -76,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Commissioned.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="144" column="50" selection-start-line="144" selection-start-column="50" selection-end-line="144" selection-end-column="50" />
+            <state relative-caret-position="160">
+              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
               <folding>
                 <element signature="e#107#108#0" expanded="true" />
                 <element signature="e#131#132#0" expanded="true" />
@@ -120,8 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Hourly.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-40">
-              <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            <state relative-caret-position="746">
+              <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
               <folding>
                 <element signature="e#101#102#0" expanded="true" />
                 <element signature="e#125#126#0" expanded="true" />
@@ -168,10 +165,10 @@
         <option value="$PROJECT_DIR$/src/com/company/Empregados.java" />
         <option value="$PROJECT_DIR$/src/com/company/Menu.java" />
         <option value="$PROJECT_DIR$/src/com/company/Employees.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Hourly.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Working.java" />
         <option value="$PROJECT_DIR$/src/com/company/Salaried.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Hourly.java" />
         <option value="$PROJECT_DIR$/src/com/company/Commissioned.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Working.java" />
       </list>
     </option>
   </component>
@@ -181,7 +178,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
@@ -269,8 +266,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="953" y="0" width="974" height="1087" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.26367614" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -361,8 +357,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Hourly.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-40">
-          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        <state relative-caret-position="746">
+          <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
           <folding>
             <element signature="e#101#102#0" expanded="true" />
             <element signature="e#125#126#0" expanded="true" />
@@ -378,27 +374,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Employees.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Working.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1406">
-          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Salaried.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        <state relative-caret-position="832">
+          <caret line="149" column="5" selection-start-line="149" selection-start-column="5" selection-end-line="149" selection-end-column="5" />
           <folding>
             <element signature="e#4307#4308#0" expanded="true" />
             <element signature="e#4342#4343#0" expanded="true" />
@@ -410,8 +389,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Commissioned.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="144" column="50" selection-start-line="144" selection-start-column="50" selection-end-line="144" selection-end-column="50" />
+        <state relative-caret-position="160">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
           <folding>
             <element signature="e#107#108#0" expanded="true" />
             <element signature="e#131#132#0" expanded="true" />
@@ -443,6 +422,23 @@
             <element signature="e#4948#4949#0" expanded="true" />
             <element signature="e#5075#5076#0" expanded="true" />
             <element signature="e#5127#5128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Employees.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Working.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

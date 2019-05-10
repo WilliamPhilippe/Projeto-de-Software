@@ -6,7 +6,7 @@ public class Commissioned implements Employees {
 
     private int employeeNumber;
     private String name;
-    private String type = "salaried";                    // salaried or hourly or commissioned
+    private String type = "commissioned";                    // salaried or hourly or commissioned
 
     // SYNDICATE
     private int syndicateNumber;
@@ -21,6 +21,7 @@ public class Commissioned implements Employees {
     private double sells = 0;
     private double commission = 0;
     private double discount = 0;
+    private String paymentDelivery = "mail";             // hands, mail, deposit
 
     // ADDRESS
     private String addressStreet;
@@ -97,7 +98,7 @@ public class Commissioned implements Employees {
         switch (option){
             case 1:
                 System.out.println("Em que dia do mes quer receber?");
-                System.out.println("Digite 0 para ultimo dia do mes.");
+                System.out.println("Digite 0 para ultimo dia util do mes.");
                 this.dayOfPayment = input.nextInt();
                 paymentMethod = "monthly";
                 break;

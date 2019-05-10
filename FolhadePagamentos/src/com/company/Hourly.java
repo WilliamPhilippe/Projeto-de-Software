@@ -19,6 +19,7 @@ public class Hourly implements Employees {
     private int dayOfPayment = 5;                       // se for 0, eh o ultimo dia do mes | seg 1 sex 5
     private double salaryWeekly = 0;
     private double hourFee = 0;
+    private String paymentDelivery = "mail";             // hands, mail, deposit
 
     // ADDRESS
     private String addressStreet;
@@ -83,11 +84,21 @@ public class Hourly implements Employees {
     }
 
     public void setSyndicateFee(double fee) {
-
+        if(syndicateIs) {
+            System.out.println("A taxa sindical atual eh de R$ " + this.syndicateFee + "para o proximo pagamento.");
+            System.out.println("Digite a nova taxa sindical.");
+            this.syndicateFee = input.nextInt(); input.nextLine();
+            System.out.println("A taxa sindical foi alterada.");
+        }
+        else{
+            System.out.println("O empregado nao pertence a um sindicato. Cadastre-o para adicionar uma taxa.");
+        }
     }
 
     public void setSyndicateMonthlyFee(double fee) {
+        // apenas sera descontada no dia 30 do mes
 
+        this.sydicateMonthlyFee = fee;
     }
 
     public void setDiscout(int discout) {

@@ -20,23 +20,39 @@ public class Working {
 
         int option = input.nextInt(); input.nextLine();
 
+
         if(option == 1){
-            Salaried newSalaried = new Salaried();
+            Salaried newEmployee = new Salaried();
 
             System.out.println("Digite o nome do empregado.");
-            newSalaried.setName(input.nextLine());
-            newSalaried.setAddress();
+            newEmployee.setName(input.nextLine());
+            newEmployee.setAddress();
             System.out.println("Digite o salario mensal do empregado.");
-            newSalaried.setSalary(input.nextDouble()); input.nextLine();
-            newSalaried.setEmployeeNumber(++employeesNumbers);
+            newEmployee.setSalary(input.nextDouble()); input.nextLine();
+            newEmployee.setEmployeeNumber(++employeesNumbers);
 
-            employees.add(newSalaried);
+            employees.add(newEmployee);
             System.out.println("Adicionado.");
+
         }
         else if(option == 2){
+            Commissioned newEmployee = new Commissioned();
 
+            System.out.println("Digite o nome do empregado.");
+            newEmployee.setName(input.nextLine());
+            newEmployee.setAddress();
+            System.out.println("Digite o salario mensal do funcionario.");
+            newEmployee.setMonthlySalary(input.nextDouble()); input.nextLine();
+            System.out.println("Qual a comissao desse funcionario?");
+            System.out.println("Ex: 0,02 para 2% de comissao.");
+            newEmployee.setCommissionPercentage(input.nextDouble()); input.nextLine();
+            newEmployee.setEmployeeNumber(++employeesNumbers);
+
+            employees.add(newEmployee);
+            System.out.println("Adicionado.");
         }
         else if(option == 3){
+
 
         }
         else System.out.println("Opcao invalida.");

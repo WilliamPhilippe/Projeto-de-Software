@@ -2,18 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="874daf6c-acd7-47c3-b636-c87fdb17ccf9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FolhadePagamentos/com/company/Commissioned.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FolhadePagamentos/com/company/Commissioned.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FolhadePagamentos/com/company/Employees.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FolhadePagamentos/com/company/Hourly.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FolhadePagamentos/com/company/Hourly.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FolhadePagamentos/com/company/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FolhadePagamentos/com/company/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FolhadePagamentos/com/company/Salaried.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FolhadePagamentos/com/company/Salaried.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FolhadePagamentos/com/company/Working.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FolhadePagamentos/com/company/Working.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Commissioned.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Commissioned.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Employees.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Hourly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Hourly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Salaried.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Salaried.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Working.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Working.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -46,14 +34,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Working.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
+            <state relative-caret-position="199">
+              <caret line="89" column="43" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/util/ArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="643" column="25" selection-start-line="643" selection-start-column="19" selection-end-line="643" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -99,6 +96,7 @@
     <findStrings>
       <find>scanner</find>
       <find>sca'</find>
+      <find>remove</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -218,7 +216,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26492536" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -229,7 +226,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3271028" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3271028" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -310,11 +307,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Working.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
+        <state relative-caret-position="199">
+          <caret line="89" column="43" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="643" column="25" selection-start-line="643" selection-start-column="19" selection-end-line="643" selection-end-column="25" />
         </state>
       </provider>
     </entry>

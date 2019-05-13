@@ -77,19 +77,27 @@ public class Working {
         int number = input.nextInt(); input.nextLine();
 
         for (Commissioned c : commissioneds){
+            System.out.println("entrou1");
             if (number == c.getEmployeeNumber()){
                 commissioneds.remove(c);
+                number = 0;
             }
         }
 
         for (Salaried s : salarieds){
-            s.getAddress();
-            System.out.println(s.getEmployeeNumber());
+            System.out.println("entrou2");
+            if (number == s.getEmployeeNumber()){
+                salarieds.remove( (Salaried) s);
+                number = 0;
+            }
         }
 
         for (Hourly h : hourlies){
-           h.getAddress();
-            System.out.println(h.getEmployeeNumber());
+            System.out.println("entrou3");
+            if (number == h.getEmployeeNumber()){
+                hourlies.remove(h);
+                number = 0;
+            }
         }
 
         if(number != 0) System.out.println("Funcionario nao encontrado. ");

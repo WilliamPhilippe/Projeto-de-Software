@@ -65,7 +65,6 @@ public class Menu {
                 break;
         }
 
-
         System.out.println();
         System.out.println();
         return (option != 0);

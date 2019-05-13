@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Salaried implements Employees {
+public class Salaried {
 
     private int employeeNumber;
     private String name;

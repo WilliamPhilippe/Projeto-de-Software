@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Commissioned implements Employees {
+public class Commissioned {
 
     private int employeeNumber;
     private String name;

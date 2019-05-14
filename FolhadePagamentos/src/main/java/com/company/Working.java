@@ -73,31 +73,46 @@ public class Working {
     }
 
     public void removeEmployee(){
-        System.out.println("Digite o numero do funcionario.\n");
-        int number = input.nextInt(); input.nextLine();
+        System.out.println("Quer fazer a pesquisa por:\n1 - Numero Pessoal.\n2 - Nome Completo.");
+        int option = input.nextInt(); input.nextLine();
+        int number = -1; String nameSearch = " "; int index = 0;
 
+        if (option == 1){
+            System.out.println("Digite o numero do funcionario.");
+            number = input.nextInt(); input.nextLine();
+        }
+        else{
+            nameSearch = input.nextLine();
+        }
+            
         for (Commissioned c : commissioneds){
-            System.out.println("entrou1");
             if (number == c.getEmployeeNumber()){
-                commissioneds.remove(c);
+                commissioneds.remove(index);
                 number = 0;
+                break;
             }
+            index++;
         }
 
+        index = 0;
         for (Salaried s : salarieds){
-            System.out.println("entrou2");
             if (number == s.getEmployeeNumber()){
-                salarieds.remove( (Salaried) s);
+                salarieds.remove(index);
                 number = 0;
+                break;
             }
+            index++;
+
         }
 
+        index = 0;
         for (Hourly h : hourlies){
-            System.out.println("entrou3");
             if (number == h.getEmployeeNumber()){
-                hourlies.remove(h);
+                hourlies.remove(index);
                 number = 0;
+                break;
             }
+            index++;
         }
 
         if(number != 0) System.out.println("Funcionario nao encontrado. ");

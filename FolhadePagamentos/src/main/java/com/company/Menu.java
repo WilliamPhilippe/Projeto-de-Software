@@ -18,9 +18,9 @@ public class Menu {
         System.out.println("7 - Rodar folha de pagamento.");
         System.out.println("8 - Agenda de pagamento.");
         System.out.println("9 - Criar nova agenda de pagamentos.");
-        System.out.println("10 - Refazer.");
-        System.out.println("11 - Desfazer.");
-        System.out.println("12 - Definir taxa sindical.");
+        System.out.println("10 - Definir taxa sindical.");
+        System.out.println("11 - Refazer.");
+        System.out.println("12 - Desfazer.");
         System.out.println("0 - Encerrar sistema.");
 
         Scanner input = new Scanner(System.in);
@@ -55,13 +55,13 @@ public class Menu {
                 company.newPaymentCalendar();
                 break;
             case 10:
-                company.redo();
+                company.setSyndicateFee();
                 break;
             case 11:
-                company.undo();
+                company.redo();
                 break;
             case 12:
-                company.setSyndicateFee();
+                company.undo();
                 break;
         }
 

@@ -20,7 +20,7 @@ public class Hourly {
     private double salary = 0;
     private double hourFee = 0;
     private String paymentDelivery = "mail";             // hands, mail, deposit
-    private int discount;
+    private double discount;
 
     // ADDRESS
     private String addressStreet;
@@ -150,7 +150,7 @@ public class Hourly {
         this.sydicateMonthlyFee = fee;               // apenas sera descontada no dia 30 do mes
     }
 
-    public void setDiscout(int discout) {
+    public void setDiscout(double discout) {
         this.discount = discout;
     }
 

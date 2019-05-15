@@ -1,12 +1,12 @@
 package com.company;
-
 import java.util.Scanner;
 
-public class Commissioned {
+public class Employees {
 
+    // Data
     private int employeeNumber;
     private String name;
-    private String type = "commissioned";                    // salaried or hourly or commissioned
+    private String type = "salaried";                    // salaried or hourly or commissioned
 
     // SYNDICATE
     private int syndicateNumber;
@@ -15,9 +15,10 @@ public class Commissioned {
     private double sydicateMonthlyFee = 0;
 
     // PAYMENT
-    private String paymentMethod = "twoeekly";           // monthly - weekly - twoweekly
-    private int dayOfPayment = 5;               // se for 0, eh o ultimo dia do mes | seg 1 sex 5
+    private String paymentMethod = "monthly";           // monthly - weekly - twoweekly
+    private int dayOfPayment = 0;               // se for 0, eh o ultimo dia do mes | seg 1 sex 5
     private double salary = 0;
+    private double hourFee = 0;
     private double sells = 0;
     private double commission = 0;
     private double discount = 0;
@@ -32,32 +33,29 @@ public class Commissioned {
 
     private Scanner input = new Scanner(System.in);
 
+    // GET
     public int getEmployeeNumber() {
         return this.employeeNumber;
     }
-
     public String getName() {
         return this.name;
     }
-
     public void getAddress() {
         System.out.println("Rua: " + this.addressStreet);
         System.out.println("Numero: " + this.addressNumber);
         System.out.println(this.addressCity + " / " + this.addressState);
     }
-
     public String getType() {
         return this.type;
     }
-
     public int getSyndicateNumber() {
         return this.syndicateNumber;
     }
-
     public boolean getSyndicateIs() {
         return this.syndicateIs;
     }
 
+    // SET
     public void setName(String name) {
         this.name = name;
     }
@@ -86,6 +84,34 @@ public class Commissioned {
     public void setEmployeeNumber(int employeeNumber) {
         this.employeeNumber = employeeNumber;
     }
+
+    public void setSyndicateNumber(int number) {
+        this.syndicateNumber = number;
+    }
+
+    public void setSyndicateIs(boolean is) {
+        this.syndicateIs = is;
+    }
+
+    public void setSyndicateMonthlyFee(double fee) { this.sydicateMonthlyFee = fee; }                   // apenas sera descontada no dia 30 do mes
+
+    public void setSyndicateFee(double fee) {
+        if(syndicateIs) {
+            System.out.println("A taxa sindical atual eh de R$ " + this.syndicateFee + "para o proximo pagamento.");
+            System.out.println("Digite a nova taxa sindical.");
+            this.syndicateFee = input.nextInt(); input.nextLine();
+            System.out.println("A taxa sindical foi alterada.");
+        }
+        else{
+            System.out.println("O empregado nao pertence a um sindicato. Cadastre-o para adicionar uma taxa.");
+        }
+    }
+
+    public void setDiscout(double discout) {
+        this.discount = discout;
+    }
+
+    public void setSells(double sells){ this.sells = sells; }
 
     public void setPaymentMethod() {
         System.out.println("Você quer receber:");
@@ -118,57 +144,15 @@ public class Commissioned {
                 System.out.println("Opcao invalida.");
         }
 
+
+        public void processPayment() { }
+
+        public String toString(){ return "Nome: " + this.name + " Number: " + this.employeeNumber; }
+
+
+
         input.nextLine();
         System.out.println("Agenda de pagamento alterada.");
     }
 
-    public void setSyndicateNumber(int number) {
-        this.syndicateNumber = number;
-    }
-
-    public void setSyndicateIs(boolean is) {
-        this.syndicateIs = is;
-    }
-
-    public void setSyndicateFee(double fee) {
-        if(syndicateIs) {
-            System.out.println("A taxa sindical atual eh de R$ " + this.syndicateFee + "para o proximo pagamento.");
-            System.out.println("Digite a nova taxa sindical.");
-            this.syndicateFee = input.nextInt(); input.nextLine();
-            System.out.println("A taxa sindical foi alterada.");
-        }
-        else{
-            System.out.println("O empregado nao pertence a um sindicato. Cadastre-o para adicionar uma taxa.");
-        }
-    }
-
-    public void setSyndicateMonthlyFee(double fee) {
-        // apenas sera descontada no dia 30 do mes
-
-        this.sydicateMonthlyFee = fee;
-    }
-
-    public void setDiscout(double discout) {
-        this.discount = discout;
-    }
-
-    public void setSells(double sells){ this.sells = sells; }
-
-    public void processPayment() { }
-
-    public String toString(){
-        return "Nome: " + this.name + " Number: " + this.employeeNumber;
-    }
-
-    public void setMonthlySalary(double salary){
-        this.salary = salary;
-    }
-
-    public void setCommissionPercentage(double percentage){
-        this.commission = percentage;
-    }
-
-    public void addSells(double sells){
-        this.sells += sells * this.commission;
-    }
 }

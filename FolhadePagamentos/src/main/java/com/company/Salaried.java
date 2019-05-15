@@ -149,8 +149,8 @@ public class Salaried {
         this.sydicateMonthlyFee = fee;
     }
 
-    public void setDiscout(int discout) {
-
+    public void setDiscout(double discout) {
+        this.discount = discout;
     }
 
     public void setSalary(double salary){

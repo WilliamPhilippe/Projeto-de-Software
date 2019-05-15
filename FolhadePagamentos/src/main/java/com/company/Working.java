@@ -82,11 +82,17 @@ public class Working {
             number = input.nextInt(); input.nextLine();
         }
         else{
+            System.out.println("Digite corretamente o nome completo do funcionario.");
             nameSearch = input.nextLine();
         }
-            
+
         for (Commissioned c : commissioneds){
-            if (number == c.getEmployeeNumber()){
+            if (option == 1 && number == c.getEmployeeNumber()){
+                commissioneds.remove(index);
+                number = 0;
+                break;
+            }
+            else if(option == 2 && c.getName().intern() == nameSearch.intern()){
                 commissioneds.remove(index);
                 number = 0;
                 break;
@@ -96,7 +102,12 @@ public class Working {
 
         index = 0;
         for (Salaried s : salarieds){
-            if (number == s.getEmployeeNumber()){
+            if (option == 1 && number == s.getEmployeeNumber()){
+                salarieds.remove(index);
+                number = 0;
+                break;
+            }
+            else if(option == 2 && s.getName().intern() == nameSearch.intern()){
                 salarieds.remove(index);
                 number = 0;
                 break;
@@ -107,7 +118,12 @@ public class Working {
 
         index = 0;
         for (Hourly h : hourlies){
-            if (number == h.getEmployeeNumber()){
+            if (option == 1 && number == h.getEmployeeNumber()){
+                hourlies.remove(index);
+                number = 0;
+                break;
+            }
+            else if(option == 2 && h.getName().intern() == nameSearch.intern()){
                 hourlies.remove(index);
                 number = 0;
                 break;
@@ -117,6 +133,7 @@ public class Working {
 
         if(number != 0) System.out.println("Funcionario nao encontrado. ");
         else System.out.println("Removido.");
+
     }
 
     public void addTimecard(){
@@ -124,15 +141,137 @@ public class Working {
     }
 
     public void addSales(){
+        System.out.println("Aviso: Para adicionar vendas, o funcionario precisa ser um comissionado.");
+        System.out.println("Quer fazer a pesquisa por:\n1 - Numero Pessoal.\n2 - Nome Completo.");
+        int option = input.nextInt(); input.nextLine();
+        int number = -1; String nameSearch = " ";
 
+        if (option == 1){
+            System.out.println("Digite o numero do funcionario.");
+            number = input.nextInt(); input.nextLine();
+        }
+        else{
+            System.out.println("Digite corretamente o nome completo do funcionario.");
+            nameSearch = input.nextLine();
+        }
+
+        for (Commissioned c : commissioneds){
+            if (option == 1 && number == c.getEmployeeNumber()){
+                System.out.println("Insira as vendas de " + c.getName());
+                c.setSells(input.nextDouble()); input.nextLine();
+                number = 0;
+                break;
+            }
+            else if(option == 2 && c.getName().intern() == nameSearch.intern()){
+                System.out.println("Insira as vendas de " + c.getName());
+                c.setSells(input.nextDouble()); input.nextLine();
+                number = 0;
+                break;
+            }
+        }
+
+        if (number != 0) System.out.println("Usuario nao encontrado.");
+        else System.out.println("Vendas inseridas.");
     }
 
     public void addFeeService(){
+        System.out.println("Quer fazer a pesquisa por:\n1 - Numero Pessoal.\n2 - Nome Completo.");
+        int option = input.nextInt(); input.nextLine();
+        int number = -1; String nameSearch = " ";
 
+        if (option == 1){
+            System.out.println("Digite o numero do funcionario.");
+            number = input.nextInt(); input.nextLine();
+        }
+        else{
+            System.out.println("Digite corretamente o nome completo do funcionario.");
+            nameSearch = input.nextLine();
+        }
+
+        for (Commissioned c : commissioneds){
+            if (option == 1 && number == c.getEmployeeNumber()){
+                System.out.println("Digite o valor a ser descontado de " + c.getName());
+                c.setDiscout(input.nextDouble()); input.nextLine();
+                number = 0; break;
+            }
+            else if(option == 2 && c.getName().intern() == nameSearch.intern()){
+                System.out.println("Digite o valor a ser descontado de " + c.getName());
+                c.setDiscout(input.nextDouble()); input.nextLine();
+                number = 0; break;
+            }
+        }
+
+        for (Salaried s : salarieds){
+            if (option == 1 && number == s.getEmployeeNumber()){
+                System.out.println("Digite o valor a ser descontado de " + s.getName());
+                s.setDiscout(input.nextDouble()); input.nextLine();
+                number = 0; break;
+            }
+            else if(option == 2 && s.getName().intern() == nameSearch.intern()){
+                System.out.println("Digite o valor a ser descontado de " + s.getName());
+                s.setDiscout(input.nextDouble()); input.nextLine();
+                number = 0; break;
+            }
+        }
+
+        for (Hourly h : hourlies){
+            if (option == 1 && number == h.getEmployeeNumber()){
+                System.out.println("Digite o valor a ser descontado de " + h.getName());
+                h.setDiscout(input.nextDouble()); input.nextLine();
+                number = 0; break;
+            }
+            else if(option == 2 && h.getName().intern() == nameSearch.intern()){
+                System.out.println("Digite o valor a ser descontado de " + h.getName());
+                h.setDiscout(input.nextDouble()); input.nextLine();
+                number = 0; break;
+            }
+        }
+
+        if (number != 0) System.out.println("Usuario nao encontrado.");
+        else System.out.println("Discontos inseridos.");
     }
 
     public void changeEmployeeDetails(){
+        System.out.println("Quer fazer a pesquisa por:\n1 - Numero Pessoal.\n2 - Nome Completo.");
+        int option = input.nextInt(); input.nextLine();
+        int number = -1; String nameSearch = " ";
 
+        if (option == 1){
+            System.out.println("Digite o numero do funcionario.");
+            number = input.nextInt(); input.nextLine();
+        }
+        else{
+            System.out.println("Digite corretamente o nome completo do funcionario.");
+            nameSearch = input.nextLine();
+        }
+
+//        System.out.println("O que voce deseja mudar?\n" +
+//                "1 - Nome.\n" +
+//                "2 - Endereco.\n" +
+//                "3 - Tipo.\n" +
+//                "4 - Metodo de pagamento.\n" +
+//                "5 - Colocar ou retirar do sindicato.\n" +
+//                "6 - Taxa sindical.");
+//        int select = input.nextInt(); input.nextLine();
+
+        
+
+        switch (select) {
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            case 6:
+                break;
+            default:
+                System.out.println("Opcao invalida.");
+        }
     }
 
     public void runPayments(){
@@ -153,15 +292,15 @@ public class Working {
 
     }
 
+    public void setSyndicateFee(){
+
+    }
+
     public void redo(){
 
     }
 
     public void undo(){
-
-    }
-
-    public void setSyndicateFee(){
 
     }
 

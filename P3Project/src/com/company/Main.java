@@ -98,5 +98,38 @@ public class Main {
 
     }
 
+    public void addEmployee(){}
+
+    public void removeEmployee(){}
+
+    public void addTimecard(){}
+
+    public void addSales(){}
+
+    public void addFeeService(){}
+
+    public void changeEmployeesDetails(){
+
+    }
+
+    public void runPayments(){
+        /* Todo:
+         * Dia 30 rodar taxas mensais do sindicato.
+         * Verificar se há taxas do sindicato a ser deduzidas.
+         * Verificar deducoes de cada funcionario.
+         * Usar resto de 7 e 30 para os dias.
+         * To-do mes tem trinta dias.
+         */
+    }
+
+    public void setPayment(){}
+
+    public void newPaymentCalendar(){}
+
+    public void setSyndicateFee(){}
+
+    public void redo(){}
+
+    public void undo(){}
 
 }

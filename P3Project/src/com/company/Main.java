@@ -7,6 +7,8 @@ public class Main {
     int employeesNumber = 0;
     int syndicatNumber = 0;
     final int MAX_SIZE = 100;
+    int currentDay = 1;
+
 
     String[] names = new String[100];
     String[] types = new String[100];           // salaried or hourly or commissioned

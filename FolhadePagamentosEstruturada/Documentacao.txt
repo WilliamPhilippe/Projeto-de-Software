@@ -1,0 +1,28 @@
+DOCUMENTAÇÃO FOLHA DE PAGAMENTO ESTRUTURADA (SEM OO)
+
+ALGUMAS INFORMAÇÕES:
+  Se um empregado de número X foi removido, este número X não poderá ser usado para outro empregado.
+  O limite de empregados e de dias do programa é 100, mas poderá ser alterado. "maxSize" "maxDays"
+  
+  
+FUNÇÕES:
+  Lançar Cartão de Ponto:
+    Só é pedido o horário de entrada e o horário de saída.
+    
+  Alterar detalhes do empregado:
+    Sempre que for mudar o tipo de empregado, todas as informações referentes irão ser pedidas, ainda que sejam iguais a anteriores.
+    
+  Rodar folha de pagamento:
+    Por padrão, os empregados recebem ou na sexta ou no último dia do mês, dependendo do tipo.
+    Caso o empregado altere o dia de pagamento, o pagamento irá ser efetuado independente de ser dia útil ou não.
+    O dia do programa é passado ao final da execução dessa função.
+    
+  Undo:
+    A função de UNDO desfaz todas as alterações feitas no dia em curso.
+    
+  Agenda de Pagamento e Criação de Agendas de Pagamento:
+    Independente da função escolhida, deve-se escolhe para quais funcionários as alterações devem ser feitas.
+    
+    
+ William Philippe
+ wplb@ic.ufal.br

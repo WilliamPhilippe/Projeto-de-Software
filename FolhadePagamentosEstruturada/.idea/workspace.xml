@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4115cf7c-9e00-4512-957c-eff21f6fcaaa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../FolhadePagamentos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FolhadePagamentos/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FolhadePagamentos/src/main/java/com/company/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FolhadePagamentos/src/main/java/com/company/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,18 +19,34 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="740">
-              <caret line="161" column="47" selection-start-line="161" selection-start-column="47" selection-end-line="161" selection-end-column="47" />
+            <state relative-caret-position="849">
+              <caret line="354" column="36" selection-start-line="354" selection-start-column="36" selection-end-line="354" selection-end-column="36" />
               <folding>
-                <element signature="e#2187#2829#0" />
-                <element signature="e#4201#4202#0" expanded="true" />
-                <element signature="e#4237#4238#0" expanded="true" />
-                <element signature="e#5903#5904#0" expanded="true" />
-                <element signature="e#5942#5943#0" expanded="true" />
-                <element signature="e#6190#6191#0" expanded="true" />
-                <element signature="e#6234#6235#0" expanded="true" />
-                <element signature="e#7039#7040#0" expanded="true" />
-                <element signature="e#7086#7087#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#main#0;class#Main#0" />
+                <element signature="method#addEmployee#0;class#Main#0" />
+                <element signature="method#removeEmployee#0;class#Main#0" />
+                <element signature="e#7140#8811#0" />
+                <element signature="method#addSales#0;class#Main#0" />
+                <element signature="method#addFeeService#0;class#Main#0" />
+                <element signature="method#changeEmployeesDetails#0;class#Main#0" />
+                <element signature="e#11034#11180#0" />
+                <element signature="e#11789#12405#0" />
+                <element signature="e#21030#22550#0" />
+                <element signature="e#22561#22998#0" />
+                <element signature="e#23078#24098#0" />
+                <element signature="e#23950#24026#0" />
+                <element signature="e#13102#13569#0" />
+                <element signature="e#23694#23695#0" expanded="true" />
+                <element signature="e#23737#23738#0" expanded="true" />
+                <element signature="e#23805#23806#0" expanded="true" />
+                <element signature="e#23853#23854#0" expanded="true" />
+                <element signature="e#23923#23924#0" expanded="true" />
+                <element signature="e#23974#23975#0" expanded="true" />
+                <element signature="e#13917#14998#0" />
+                <element signature="e#15004#16596#0" />
+                <element signature="e#19396#19517#0" />
+                <element signature="e#28123#28187#0" />
               </folding>
             </state>
           </provider>
@@ -57,7 +71,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
@@ -68,35 +82,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="P3Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P3Project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P3Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P3Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P3Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P3Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.xinky.component.materialdesign.theme.lastnotify" value="1558628818415" />
+    <property name="com.xinky.component.materialdesign.theme.lastnotify" value="1559699740059" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -142,10 +135,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1087" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.51859957" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2185501" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -154,7 +147,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32914045" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33021808" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -162,7 +155,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32914045" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -172,49 +165,49 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.51859957" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/text/SimpleDateFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32868">
+          <caret line="596" column="11" selection-start-line="596" selection-start-column="11" selection-end-line="596" selection-end-column="11" />
+          <folding>
+            <element signature="e#23924#23925#0" expanded="true" />
+            <element signature="e#23996#23997#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="161" column="47" selection-start-line="161" selection-start-column="47" selection-end-line="161" selection-end-column="47" />
+        <state relative-caret-position="849">
+          <caret line="354" column="36" selection-start-line="354" selection-start-column="36" selection-end-line="354" selection-end-column="36" />
           <folding>
-            <element signature="e#2187#2829#0" />
-            <element signature="e#4201#4202#0" expanded="true" />
-            <element signature="e#4237#4238#0" expanded="true" />
-            <element signature="e#5903#5904#0" expanded="true" />
-            <element signature="e#5942#5943#0" expanded="true" />
-            <element signature="e#6190#6191#0" expanded="true" />
-            <element signature="e#6234#6235#0" expanded="true" />
-            <element signature="e#7039#7040#0" expanded="true" />
-            <element signature="e#7086#7087#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#Main#0" />
+            <element signature="method#addEmployee#0;class#Main#0" />
+            <element signature="method#removeEmployee#0;class#Main#0" />
+            <element signature="e#7140#8811#0" />
+            <element signature="method#addSales#0;class#Main#0" />
+            <element signature="method#addFeeService#0;class#Main#0" />
+            <element signature="method#changeEmployeesDetails#0;class#Main#0" />
+            <element signature="e#11034#11180#0" />
+            <element signature="e#11789#12405#0" />
+            <element signature="e#21030#22550#0" />
+            <element signature="e#22561#22998#0" />
+            <element signature="e#23078#24098#0" />
+            <element signature="e#23950#24026#0" />
+            <element signature="e#13102#13569#0" />
+            <element signature="e#23694#23695#0" expanded="true" />
+            <element signature="e#23737#23738#0" expanded="true" />
+            <element signature="e#23805#23806#0" expanded="true" />
+            <element signature="e#23853#23854#0" expanded="true" />
+            <element signature="e#23923#23924#0" expanded="true" />
+            <element signature="e#23974#23975#0" expanded="true" />
+            <element signature="e#13917#14998#0" />
+            <element signature="e#15004#16596#0" />
+            <element signature="e#19396#19517#0" />
+            <element signature="e#28123#28187#0" />
           </folding>
         </state>
       </provider>

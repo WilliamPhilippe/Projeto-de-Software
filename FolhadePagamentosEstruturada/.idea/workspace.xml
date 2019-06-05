@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4115cf7c-9e00-4512-957c-eff21f6fcaaa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,34 +19,28 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="849">
-              <caret line="354" column="36" selection-start-line="354" selection-start-column="36" selection-end-line="354" selection-end-column="36" />
+            <state relative-caret-position="300">
+              <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#main#0;class#Main#0" />
-                <element signature="method#addEmployee#0;class#Main#0" />
-                <element signature="method#removeEmployee#0;class#Main#0" />
-                <element signature="e#7140#8811#0" />
-                <element signature="method#addSales#0;class#Main#0" />
-                <element signature="method#addFeeService#0;class#Main#0" />
-                <element signature="method#changeEmployeesDetails#0;class#Main#0" />
-                <element signature="e#11034#11180#0" />
-                <element signature="e#11789#12405#0" />
-                <element signature="e#21030#22550#0" />
-                <element signature="e#22561#22998#0" />
-                <element signature="e#23078#24098#0" />
-                <element signature="e#23950#24026#0" />
-                <element signature="e#13102#13569#0" />
-                <element signature="e#23694#23695#0" expanded="true" />
-                <element signature="e#23737#23738#0" expanded="true" />
-                <element signature="e#23805#23806#0" expanded="true" />
-                <element signature="e#23853#23854#0" expanded="true" />
-                <element signature="e#23923#23924#0" expanded="true" />
-                <element signature="e#23974#23975#0" expanded="true" />
-                <element signature="e#13917#14998#0" />
-                <element signature="e#15004#16596#0" />
-                <element signature="e#19396#19517#0" />
-                <element signature="e#28123#28187#0" />
+                <element signature="e#1997#4520#0" />
+                <element signature="e#4526#7131#0" />
+                <element signature="e#7137#7361#0" />
+                <element signature="e#7367#9097#0" />
+                <element signature="e#9103#9916#0" />
+                <element signature="e#9922#10522#0" />
+                <element signature="e#10528#11858#0" />
+                <element signature="e#11864#12622#0" />
+                <element signature="e#12628#21334#0" />
+                <element signature="e#21340#22832#0" />
+                <element signature="e#22838#23275#0" />
+                <element signature="e#23281#24147#0" />
+                <element signature="e#24153#24310#0" />
+                <element signature="e#24412#24879#0" />
+                <element signature="e#25227#26308#0" />
+                <element signature="e#26314#27906#0" />
+                <element signature="e#27912#28446#0" />
+                <element signature="e#28452#29706#0" />
               </folding>
             </state>
           </provider>
@@ -82,14 +76,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.xinky.component.materialdesign.theme.lastnotify" value="1559699740059" />
+    <property name="com.xinky.component.materialdesign.theme.lastnotify" value="1559754125325" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -138,7 +132,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2185501" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22068231" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -180,34 +174,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="849">
-          <caret line="354" column="36" selection-start-line="354" selection-start-column="36" selection-end-line="354" selection-end-column="36" />
+        <state relative-caret-position="300">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#Main#0" />
-            <element signature="method#addEmployee#0;class#Main#0" />
-            <element signature="method#removeEmployee#0;class#Main#0" />
-            <element signature="e#7140#8811#0" />
-            <element signature="method#addSales#0;class#Main#0" />
-            <element signature="method#addFeeService#0;class#Main#0" />
-            <element signature="method#changeEmployeesDetails#0;class#Main#0" />
-            <element signature="e#11034#11180#0" />
-            <element signature="e#11789#12405#0" />
-            <element signature="e#21030#22550#0" />
-            <element signature="e#22561#22998#0" />
-            <element signature="e#23078#24098#0" />
-            <element signature="e#23950#24026#0" />
-            <element signature="e#13102#13569#0" />
-            <element signature="e#23694#23695#0" expanded="true" />
-            <element signature="e#23737#23738#0" expanded="true" />
-            <element signature="e#23805#23806#0" expanded="true" />
-            <element signature="e#23853#23854#0" expanded="true" />
-            <element signature="e#23923#23924#0" expanded="true" />
-            <element signature="e#23974#23975#0" expanded="true" />
-            <element signature="e#13917#14998#0" />
-            <element signature="e#15004#16596#0" />
-            <element signature="e#19396#19517#0" />
-            <element signature="e#28123#28187#0" />
+            <element signature="e#1997#4520#0" />
+            <element signature="e#4526#7131#0" />
+            <element signature="e#7137#7361#0" />
+            <element signature="e#7367#9097#0" />
+            <element signature="e#9103#9916#0" />
+            <element signature="e#9922#10522#0" />
+            <element signature="e#10528#11858#0" />
+            <element signature="e#11864#12622#0" />
+            <element signature="e#12628#21334#0" />
+            <element signature="e#21340#22832#0" />
+            <element signature="e#22838#23275#0" />
+            <element signature="e#23281#24147#0" />
+            <element signature="e#24153#24310#0" />
+            <element signature="e#24412#24879#0" />
+            <element signature="e#25227#26308#0" />
+            <element signature="e#26314#27906#0" />
+            <element signature="e#27912#28446#0" />
+            <element signature="e#28452#29706#0" />
           </folding>
         </state>
       </provider>

@@ -25,7 +25,7 @@ public class Hourly extends Employees {
 
     public void setHourlyFee(Scanner input){
         System.out.println("Insira o custo da hora do funcionario.");
-        System.out.println("Exemplo: 123,41");
+        System.out.println("Exemplo:  123,41");
         while (true){
             try {
                 this.hourlyFee = input.nextDouble(); input.nextLine();

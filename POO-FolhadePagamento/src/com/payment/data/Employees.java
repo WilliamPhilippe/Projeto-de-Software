@@ -80,7 +80,7 @@ public abstract class Employees {
 
     public void setSyndicateIs(boolean is){ this.syndicateIs = is; }
 
-    public void setSyndicateFee(double fee){ this.syndicateFee = fee; }
+    public void setSyndicateFee(double fee){ this.syndicateFee += fee; }
 
     public void setSyndicateMonthlyFee(double fee){ this.syndicateMonthlyFee = fee; }
 
@@ -88,9 +88,26 @@ public abstract class Employees {
 
     public void setDayOfPayment(int day){ this.dayOfPayment = day; }
 
-    public void setSalary(double salary){ this.salary = salary; }
+    public void setSalary(double salary) { this.salary = salary; }
 
-    public void setDiscount(double discount){ this.discount = discount; }
+    public void setSalary(Scanner input){
+        System.out.println("Digite o salario mensal do funcionario.\n" +
+                "Exemplo: 1235,67");
+
+        while(true){
+            try {
+                setSalary(input.nextDouble());
+                input.nextLine();
+                System.out.println("Salario definido.");
+                break;
+            }
+            catch (InputMismatchException e){
+                System.out.println("Entrada invalida. Digite um numero commo 123,45");
+            }
+        }
+    }
+
+    public void setDiscount(double discount){ this.discount += discount; }
 
     public void setPaymentDelivery(String delivery){ this.paymentDelivery = delivery; }
 

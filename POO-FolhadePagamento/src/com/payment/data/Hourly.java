@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Hourly extends Employees {
 
     private double hourlyFee = 0;
+    private double hourPayment = 0;
 
     public Hourly(Scanner input, int employeeNumber){
         super.setName(input);
@@ -18,6 +19,8 @@ public class Hourly extends Employees {
         super.setPaymentDelivery("deposit");
         super.setAddress(input);
     }
+
+    public Hourly(){}
 
     public void setHourlyFee(double fee){
         this.hourlyFee = fee;
@@ -40,12 +43,25 @@ public class Hourly extends Employees {
         }
     }
 
-    public void timeCard(){
-
+    public void setHourPayment(double hours){
+        if (hours <= 8){
+            this.hourPayment += hours * this.hourlyFee;
+        }
+        else{
+            this.hourPayment += (8 * this.hourlyFee) + (hours - 8.0)*this.hourlyFee*1.5;
+        }
     }
+
+    public double getHourlyFee(){ return hourlyFee; }
+
+    public double getHourPayment(){ return hourPayment; }
 
     @Override
     public void runPayment(int day) {
-
+        /* Lembrar de zerar
+         * - SyndicateFee
+         * - Discount
+         * - Horas trabalhadas
+        */
     }
 }

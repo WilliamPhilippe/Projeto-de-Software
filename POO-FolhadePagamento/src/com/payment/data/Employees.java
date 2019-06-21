@@ -1,5 +1,7 @@
 package com.payment.data;
 
+import com.company.Tools;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -90,21 +92,12 @@ public abstract class Employees {
 
     public void setSalary(double salary) { this.salary = salary; }
 
-    public void setSalary(Scanner input){
+    public void setSalary(){
         System.out.println("Digite o salario mensal do funcionario.\n" +
                 "Exemplo: 1235,67");
 
-        while(true){
-            try {
-                setSalary(input.nextDouble());
-                input.nextLine();
-                System.out.println("Salario definido.");
-                break;
-            }
-            catch (InputMismatchException e){
-                System.out.println("Entrada invalida. Digite um numero commo 123,45");
-            }
-        }
+        setSalary(Tools.readDouble("Ex: 123,56"));
+        System.out.println("Salario definido.");
     }
 
     public void setDiscount(double discount){ this.discount += discount; }
@@ -112,17 +105,10 @@ public abstract class Employees {
     public void setPaymentDelivery(String delivery){ this.paymentDelivery = delivery; }
 
     public void setAddress(Scanner input){
-        while (true){
-            try{
-                System.out.println("Numero: ");
-                this.addressNumber = input.nextInt(); input.nextLine();
-                break;
-            }
-            catch (InputMismatchException e){
-                System.out.println("O numero precisa ser um inteiro.\n" +
-                        "Tente novamnte.\n");
-            }
-        }
+        System.out.println("Definir enderenço: ");
+
+        System.out.println("Numero: ");
+        this.addressNumber = Tools.readInteger("O numero precisa ser um inteiro.");
 
         System.out.println("Digite o nome da rua: ");
         this.addressStreet = input.nextLine();
@@ -132,6 +118,10 @@ public abstract class Employees {
 
         System.out.println("Digite o estado: ");
         this.addressState = input.nextLine();
+    }
+
+    public String toString(){
+        return "Nome: " + this.getName() + "\nNumero: " + this.getEmployeeNumber();
     }
 
     public abstract void runPayment(int day);

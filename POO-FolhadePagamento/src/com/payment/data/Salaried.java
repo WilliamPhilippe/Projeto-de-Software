@@ -8,7 +8,7 @@ public class Salaried extends Employees {
     public Salaried(Scanner input, int employeeNumber){
         super.setName(input);
         super.setType("salaried");
-        super.setSalary(input);
+        super.setSalary();
         super.setEmployeeStatus(true);
         super.setEmployeeNumber(employeeNumber);
         super.setPaymentPeriod("monthly");

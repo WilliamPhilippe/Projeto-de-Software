@@ -1,5 +1,7 @@
 package com.payment.data;
 
+import com.company.Tools;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -13,8 +15,8 @@ public class Commissioned extends Employees {
     public Commissioned(Scanner input, int employeeNumber){
         super.setName(input);
         super.setType("commissioned");
-        super.setSalary(input);
-        setCommissionFee(input);
+        super.setSalary();
+        setCommissionFee();
         super.setEmployeeStatus(true);
         super.setEmployeeNumber(employeeNumber);
         super.setPaymentPeriod("twoweekly");
@@ -23,38 +25,22 @@ public class Commissioned extends Employees {
         super.setAddress(input);
     }
 
-    public void setCommissionFee(Scanner input){
+    public void setCommissionFee(){
         System.out.println("Digite a comissao de vendas do funcionario.\n" +
                 "Exemplo: 0,05 para 5% de comissao.");
 
-        while (true) {
-            try {
-                setCommissionFee(input.nextDouble());
-                input.nextLine();
-                System.out.println("Comissao definida.");
-                break;
-            } catch (InputMismatchException e) {
-                System.out.println("Entrada invalida. Tente novamente. Ex: 0,01 para 1%");
-            }
-        }
+        setCommissionFee(Tools.readDouble("Ex: 0,05 para 5% de comissao."));
+        System.out.println("Comissao definida.");
     }
 
     public void setCommissionFee(double commissionFee){ this.commissionFee = commissionFee; }
 
-    public void setSells(Scanner input){
+    public void setSells(){
         System.out.println("Digite as vendas deste funcionario.\n" +
                 "Exemplo: 1245,12");
 
-        while (true){
-            try {
-                setSells(input.nextDouble()); input.nextLine();
-                System.out.println("Vendas definidas.");
-                break;
-            }
-            catch (InputMismatchException e){
-                System.out.println("Entrada invalida. Tente novamente. Ex: 123,12");
-            }
-        }
+        setSells(Tools.readDouble("Ex: 123,12"));
+        System.out.println("Vendas definidas.");
     }
 
     public void setSells(double sells){ this.sells += sells * this.commissionFee; }

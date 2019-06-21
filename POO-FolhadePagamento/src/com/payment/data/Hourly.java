@@ -1,5 +1,7 @@
 package com.payment.data;
 
+import com.company.Tools;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -11,7 +13,7 @@ public class Hourly extends Employees {
     public Hourly(Scanner input, int employeeNumber){
         super.setName(input);
         super.setType("hourly");
-        setHourlyFee(input);
+        setHourlyFee();
         super.setEmployeeStatus(true);
         super.setEmployeeNumber(employeeNumber);
         super.setPaymentPeriod("weekly");
@@ -26,21 +28,12 @@ public class Hourly extends Employees {
         this.hourlyFee = fee;
     }
 
-    public void setHourlyFee(Scanner input){
+    public void setHourlyFee(){
         System.out.println("Insira o custo da hora do funcionario.");
         System.out.println("Exemplo:  123,41");
-        while (true){
-            try {
-                this.hourlyFee = input.nextDouble(); input.nextLine();
-                System.out.println("Taxa alterada.");
-                break;
-            }
-            catch (InputMismatchException e){
-                System.out.println("Formato invalido.");
-                System.out.println("Formato aceito: 123,42");
-                System.out.println("Tente novamente.");
-            }
-        }
+
+        setHourlyFee( Tools.readDouble("Ex: 123,56") );
+        System.out.println("Taxa alterada.");
     }
 
     public void setHourPayment(double hours){

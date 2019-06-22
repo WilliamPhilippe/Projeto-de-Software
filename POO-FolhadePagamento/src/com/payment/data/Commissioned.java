@@ -2,9 +2,6 @@ package com.payment.data;
 
 import com.company.Tools;
 
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
 public class Commissioned extends Employees {
 
     private double commissionFee = 0;
@@ -12,8 +9,8 @@ public class Commissioned extends Employees {
 
     public Commissioned(){}
 
-    public Commissioned(Scanner input, int employeeNumber){
-        super.setName(input);
+    public Commissioned(int employeeNumber){
+        super.setName();
         super.setType("commissioned");
         super.setSalary();
         setCommissionFee();
@@ -22,7 +19,7 @@ public class Commissioned extends Employees {
         super.setPaymentPeriod("twoweekly");
         super.setDayOfPayment(6);
         super.setPaymentDelivery("deposit");
-        super.setAddress(input);
+        super.setAddress();
     }
 
     public void setCommissionFee(){

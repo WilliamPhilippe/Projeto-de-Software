@@ -2,16 +2,13 @@ package com.payment.data;
 
 import com.company.Tools;
 
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
 public class Hourly extends Employees {
 
     private double hourlyFee = 0;
     private double hourPayment = 0;
 
-    public Hourly(Scanner input, int employeeNumber){
-        super.setName(input);
+    public Hourly(int employeeNumber){
+        super.setName();
         super.setType("hourly");
         setHourlyFee();
         super.setEmployeeStatus(true);
@@ -19,7 +16,7 @@ public class Hourly extends Employees {
         super.setPaymentPeriod("weekly");
         super.setDayOfPayment(6);
         super.setPaymentDelivery("deposit");
-        super.setAddress(input);
+        super.setAddress();
     }
 
     public Hourly(){}

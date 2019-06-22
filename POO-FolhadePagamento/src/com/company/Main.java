@@ -1,14 +1,11 @@
 package com.company;
 
-import java.util.Scanner;
-
 public class Main {
 
     private static Working company = new Working();
 
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
         int option;
 
         while (true){
@@ -45,7 +42,7 @@ public class Main {
                         company.addServiceFee();
                         break;
                     case 6:
-                        company.changeDetails();
+                        Edit.edition(company);
                         break;
                     case 7:
                         company.runPayment();

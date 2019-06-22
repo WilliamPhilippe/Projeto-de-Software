@@ -2,7 +2,6 @@ package com.payment.data;
 
 import com.company.Tools;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public abstract class Employees {
@@ -64,7 +63,16 @@ public abstract class Employees {
         System.out.println(addressCity + " | " + addressState);
     }
 
-    public void setName(Scanner input){
+    public int getAddressNumber(){ return addressNumber; }
+
+    public String getAddressStreet(){ return addressStreet; }
+
+    public String getAddressCity(){ return addressCity; }
+
+    public String getAddressState(){ return addressState; }
+
+    public void setName(){
+        Scanner input = new Scanner(System.in);
         System.out.println("Digite o nome do funcionario.");
         this.name = input.nextLine();
         System.out.println("Nome modificado.");
@@ -86,6 +94,12 @@ public abstract class Employees {
 
     public void setSyndicateMonthlyFee(double fee){ this.syndicateMonthlyFee = fee; }
 
+    public void setSyndicateMonthlyFee(){
+        System.out.println("Digite a taxa mensal sindical. Ex: 123,45");
+        this.setSyndicateMonthlyFee(Tools.readDouble("Ex: 123,445"));
+        System.out.println("Taxa sindical mensal definida.");
+    }
+
     public void setPaymentPeriod(String period){ this.paymentPeriod = period; }
 
     public void setDayOfPayment(int day){ this.dayOfPayment = day; }
@@ -104,7 +118,8 @@ public abstract class Employees {
 
     public void setPaymentDelivery(String delivery){ this.paymentDelivery = delivery; }
 
-    public void setAddress(Scanner input){
+    public void setAddress(){
+        Scanner input = new Scanner(System.in);
         System.out.println("Definir endereço: ");
 
         System.out.println("Numero: ");
@@ -118,6 +133,13 @@ public abstract class Employees {
 
         System.out.println("Digite o estado: ");
         this.addressState = input.nextLine();
+    }
+
+    public void setAddress(int addressNumber, String addressStreet, String addressCity, String addressState){
+        this.addressNumber = addressNumber;
+        this.addressState = addressState;
+        this.addressStreet = addressStreet;
+        this.addressCity = addressCity;
     }
 
     public String toString(){

@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Tools {
 
     public static Employees search(ArrayList<Employees> employees){
-        System.out.println("Voce deseja fazer uam busca por (1) nome ou (2) numero do funcionario? ");
+        System.out.println("Voce deseja fazer uma busca por (1) nome ou (2) numero do funcionario? ");
         int option = selectOption(1, 2);
         Scanner input = new Scanner(System.in);
 
@@ -47,6 +47,11 @@ public class Tools {
                         return item;
                     }
                 }
+
+                System.out.println("Funcionario nao encontrado ou nao existe. Deseja tentar novamente? (1) Sim (0) Nao.");
+
+                option = selectOption(0, 1);
+                if (option == 0) throw new SearchFailureException();
             }
         }
 

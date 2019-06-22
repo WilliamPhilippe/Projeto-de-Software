@@ -2,25 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d36d3a07-e212-4377-811b-3d5933d9ce4c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/ExceptionsOwn/InvalidOptionExcepetion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ExceptionsOwn/SearchFailureException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Edit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/TimeCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Tools.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Working.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ExceptionsOwn/OutOfPatternException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO-FolhadePagamento/com/ExceptionsOwn/OutOfPatterns.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO-FolhadePagamento/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO-FolhadePagamento/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO-FolhadePagamento/com/payment/data/Commissioned.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO-FolhadePagamento/com/payment/data/Commissioned.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO-FolhadePagamento/com/payment/data/Employees.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO-FolhadePagamento/com/payment/data/Employees.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO-FolhadePagamento/com/payment/data/Hourly.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO-FolhadePagamento/com/payment/data/Hourly.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO-FolhadePagamento/com/payment/data/Salaried.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO-FolhadePagamento/com/payment/data/Salaried.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ExceptionsOwn/OutOfPatterns.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO-FolhadePagamento/com/company/TimeCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO-FolhadePagamento/com/company/TimeCard.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/payment/data/Commissioned.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/payment/data/Commissioned.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/TimeCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TimeCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Working.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Working.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/payment/data/Employees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/payment/data/Employees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/payment/data/Hourly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/payment/data/Hourly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/payment/data/Salaried.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/payment/data/Salaried.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,34 +25,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-665">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Working.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="76" column="61" selection-start-line="76" selection-start-column="61" selection-end-line="76" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#addEmployee#0;class#Working#0" />
-                <element signature="method#removeEmployee#0;class#Working#0" />
-              </folding>
+            <state relative-caret-position="280">
+              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Working.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="58" column="28" lean-forward="true" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#addEmployee#0;class#Working#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/TimeCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+            <state relative-caret-position="735">
+              <caret line="77" column="58" selection-start-line="77" selection-start-column="58" selection-end-line="77" selection-end-column="58" />
               <folding>
-                <element signature="e#131#132#0" expanded="true" />
-                <element signature="e#167#168#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,14 +85,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/payment/data/Employees.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1840">
-              <caret line="106" selection-start-line="106" selection-end-line="106" />
+            <state relative-caret-position="673">
+              <caret line="107" column="42" lean-forward="true" selection-start-line="107" selection-start-column="42" selection-end-line="107" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1791#1995#0" />
                 <element signature="e#2001#2189#0" />
                 <element signature="e#3009#3534#0" />
-                <element signature="e#3705#4479#0" />
               </folding>
             </state>
           </provider>
@@ -115,12 +100,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/payment/data/Hourly.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+            <state relative-caret-position="486">
+              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#setHourlyFee#1;class#Hourly#0" />
-                <element signature="method#setHourPayment#0;class#Hourly#0" />
               </folding>
             </state>
           </provider>
@@ -171,15 +155,16 @@
         <option value="$PROJECT_DIR$/src/com/ExceptionsOwn/OutOfPatterns.java" />
         <option value="$PROJECT_DIR$/src/com/ExceptionsOwn/OpcaoInvalidaException.java" />
         <option value="$PROJECT_DIR$/src/com/ExceptionsOwn/InvalidOptionExcepetion.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/ExceptionsOwn/SearchFailureException.java" />
         <option value="$PROJECT_DIR$/src/com/company/Tools.java" />
         <option value="$PROJECT_DIR$/src/com/payment/data/Hourly.java" />
         <option value="$PROJECT_DIR$/src/com/payment/data/Salaried.java" />
         <option value="$PROJECT_DIR$/src/com/payment/data/Commissioned.java" />
-        <option value="$PROJECT_DIR$/src/com/payment/data/Employees.java" />
+        <option value="$PROJECT_DIR$/src/com/ExceptionsOwn/OutOfPatternException.java" />
         <option value="$PROJECT_DIR$/src/com/company/Working.java" />
+        <option value="$PROJECT_DIR$/src/com/payment/data/Employees.java" />
         <option value="$PROJECT_DIR$/src/com/company/TimeCard.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
       </list>
     </option>
   </component>
@@ -292,7 +277,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15191898" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.6389497" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -365,18 +350,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/payment/data/Hourly.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setHourlyFee#1;class#Hourly#0" />
-            <element signature="method#setHourPayment#0;class#Hourly#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/payment/data/Salaried.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -399,31 +372,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/payment/data/Employees.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1840">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1791#1995#0" />
-            <element signature="e#2001#2189#0" />
-            <element signature="e#3009#3534#0" />
-            <element signature="e#3705#4479#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Edit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-665">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -442,25 +394,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Working.java">
+    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/text/SimpleDateFormat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="76" column="61" selection-start-line="76" selection-start-column="61" selection-end-line="76" selection-end-column="61" />
+        <state relative-caret-position="-7002">
+          <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
+          <folding>
+            <element signature="e#23924#23925#0" expanded="true" />
+            <element signature="e#23996#23997#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/payment/data/Hourly.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#addEmployee#0;class#Working#0" />
-            <element signature="method#removeEmployee#0;class#Working#0" />
+            <element signature="method#setHourlyFee#1;class#Hourly#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ExceptionsOwn/OutOfPatternException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="46" lean-forward="true" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/payment/data/Employees.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="107" column="42" lean-forward="true" selection-start-line="107" selection-start-column="42" selection-end-line="107" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1791#1995#0" />
+            <element signature="e#2001#2189#0" />
+            <element signature="e#3009#3534#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/TimeCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        <state relative-caret-position="735">
+          <caret line="77" column="58" selection-start-line="77" selection-start-column="58" selection-end-line="77" selection-end-column="58" />
           <folding>
-            <element signature="e#131#132#0" expanded="true" />
-            <element signature="e#167#168#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Working.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="58" column="28" lean-forward="true" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#addEmployee#0;class#Working#0" />
           </folding>
         </state>
       </provider>

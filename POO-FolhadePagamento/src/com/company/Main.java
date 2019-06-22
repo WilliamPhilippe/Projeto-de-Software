@@ -12,7 +12,7 @@ public class Main {
         int option;
 
         while (true){
-            System.out.println("O que deseja fazer?");
+            System.out.println("\n\nO que deseja fazer?");
             System.out.println("1 - Adicionar um empregado.");
             System.out.println("2 - Remover um empregado.");
             System.out.println("3 - Lancar um cartao de ponto.");

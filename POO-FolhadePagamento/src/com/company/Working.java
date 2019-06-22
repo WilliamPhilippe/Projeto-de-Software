@@ -56,6 +56,7 @@ public class Working {
 
     void removeEmployee(){
 
+        System.out.println("Selecione o funcionario.");
         Employees emp;
         try {
             emp = Tools.search(employees);
@@ -71,7 +72,14 @@ public class Working {
 
     void addTimeCard(){
         System.out.println("Inicialmente selecione o funcionario.");
-        Employees emp = Tools.search(employees);
+        Employees emp;
+        try {
+            emp = Tools.search(employees);
+        }
+        catch (SearchFailureException e){
+            System.out.println(e.getMessage());
+            return;
+        }
 
         if(emp instanceof Hourly) TimeCard.setTimeCard((Hourly) emp);
         else System.out.println("O funcionario nao e horista.");

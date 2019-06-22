@@ -105,7 +105,7 @@ public abstract class Employees {
     public void setPaymentDelivery(String delivery){ this.paymentDelivery = delivery; }
 
     public void setAddress(Scanner input){
-        System.out.println("Definir enderenço: ");
+        System.out.println("Definir endereço: ");
 
         System.out.println("Numero: ");
         this.addressNumber = Tools.readInteger("O numero precisa ser um inteiro.");

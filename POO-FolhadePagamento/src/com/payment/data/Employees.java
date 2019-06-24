@@ -148,4 +148,6 @@ public abstract class Employees {
 
     public abstract void runPayment(int day);
 
+    public abstract void runPayment();
+
 }

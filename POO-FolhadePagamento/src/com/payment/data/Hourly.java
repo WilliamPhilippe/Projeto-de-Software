@@ -54,4 +54,9 @@ public class Hourly extends Employees {
          * - Horas trabalhadas
         */
     }
+
+    @Override
+    public void runPayment() {
+
+    }
 }

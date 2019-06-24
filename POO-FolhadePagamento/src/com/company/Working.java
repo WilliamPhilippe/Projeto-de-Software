@@ -7,6 +7,7 @@ import com.payment.data.Hourly;
 import com.payment.data.Salaried;
 
 import java.util.ArrayList;
+import java.util.Stack;
 
 public class Working {
 
@@ -14,10 +15,14 @@ public class Working {
     private int employeeNumbers = 0;
     private int syndicateNumbers = 0;
     private int option = 0;
+    private CurrentData date;
+    private Stack<Employees> paymentsForwards;
 
     Working(){
         employees = new ArrayList<>();
         employees.add(null);
+        date = new CurrentData();
+        paymentsForwards = new Stack<>();
     }
 
     void addEmployee(){
@@ -133,7 +138,16 @@ public class Working {
         }
     }
 
-    void runPayment(){}
+    void runPayment(){
+        if(date.isBusinessDay() && !paymentsForwards.empty() ){
+            System.out.println("Pagamentos dos dias anteriores ainda nao processados:");
+            while (!paymentsForwards.empty()){
+                paymentsForwards.pop().runPayment();
+            }
+        }
+
+
+    }
 
     void undo(){}
 

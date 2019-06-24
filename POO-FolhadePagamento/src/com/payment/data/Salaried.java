@@ -20,4 +20,9 @@ public class Salaried extends Employees {
     public void runPayment(int day) {
 
     }
+
+    @Override
+    public void runPayment() {
+
+    }
 }

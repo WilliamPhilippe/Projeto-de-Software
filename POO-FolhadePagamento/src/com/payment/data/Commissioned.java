@@ -55,4 +55,9 @@ public class Commissioned extends Employees {
         */
 
     }
+
+    @Override
+    public void runPayment() {
+
+    }
 }

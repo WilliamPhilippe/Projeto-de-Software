@@ -1,5 +1,6 @@
 package com.payment.data;
 
+import com.company.Edit;
 import com.company.Tools;
 
 public class Hourly extends Employees {
@@ -57,6 +58,35 @@ public class Hourly extends Employees {
 
     @Override
     public void runPayment() {
+        System.out.println("Processando pagamento de " + super.getName());
+        System.out.println("Funcionario horista.");
 
+        double pDiscount = super.getDiscount() + super.getSyndicateFee();
+        double mFee = 0;
+
+        if( super.getPaymentPeriod().equals("weekly")){
+            mFee += super.getSyndicateMonthlyFee()*0.25;
+        }
+        if( super.getPaymentPeriod().equals("twoweekly")){
+            mFee += super.getSyndicateMonthlyFee()*0.5;
+        }
+        if( super.getPaymentPeriod().equals("monthly")){
+            mFee += super.getSyndicateMonthlyFee();
+        }
+
+        System.out.println("Salario bruto por horas trabalhadas: " + this.hourPayment);
+        System.out.println("Discontos: -" + super.getDiscount());
+        if(super.getSyndicateIs()) {
+            System.out.println("Taxas de servico: -" + super.getSyndicateFee());
+            System.out.println("Taxa Mensal do sindicato (proporcional): -" + mFee);
+        }
+        System.out.println("Recebimentos liquidos: " + (this.hourPayment - (pDiscount + mFee)) );
+        System.out.println("Pagamento processado.");
+
+        super.nullFee();
+        this.hourPayment = 0;
+
+        try { Thread.sleep(1500); }
+        catch (InterruptedException e){ e.getMessage(); }
     }
 }

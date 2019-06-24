@@ -150,4 +150,9 @@ public abstract class Employees {
 
     public abstract void runPayment();
 
+    void nullFee(){
+        this.discount = 0;
+        this.syndicateFee = 0;
+    }
+
 }

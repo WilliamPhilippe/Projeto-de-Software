@@ -17,6 +17,7 @@ public class Working {
     private int option = 0;
     private CurrentData date;
     private Stack<Employees> paymentsForwards;
+    private boolean semanadepagamentos = false;
 
     Working(){
         employees = new ArrayList<>();
@@ -139,14 +140,41 @@ public class Working {
     }
 
     void runPayment(){
-        if(date.isBusinessDay() && !paymentsForwards.empty() ){
+        boolean businessDay = date.isBusinessDay();
+
+        System.out.println(date.toString());
+        if (!businessDay) System.out.println("Hoje nao eh dia util.\n" +
+                "Todos os pagamentos de hoje serao processados no proximo dia util.");
+
+        if( businessDay && !paymentsForwards.empty() ){
             System.out.println("Pagamentos dos dias anteriores ainda nao processados:");
             while (!paymentsForwards.empty()){
                 paymentsForwards.pop().runPayment();
             }
         }
 
+        for( Employees item : employees ){
+            if (item == null) continue;
+            if( semanadepagamentos && item.getPaymentPeriod().equals("twoweekly") && item.getDayOfPayment() == date.getDayOfWeek() ){
+                if (businessDay) item.runPayment();
+                else paymentsForwards.push(item);
+            }
+            if ( item.getPaymentPeriod().equals("weekly") && item.getDayOfPayment() == date.getDayOfWeek() ){
+                if (businessDay) item.runPayment();
+                else paymentsForwards.push(item);
+            }
+            if ( item.getPaymentPeriod().equals("monthly") && item.getDayOfPayment() == date.getDayOfMonth() ){
+                if (businessDay) item.runPayment();
+                else paymentsForwards.push(item);
+            }
+            if ( item.getPaymentPeriod().equals("monthly") && item.getDayOfPayment() == 0 && date.isLastDayOfMonth()){
+                if (businessDay) item.runPayment();
+                else paymentsForwards.push(item);
+            }
+        }
 
+        semanadepagamentos = !semanadepagamentos;
+        date.nextDay();
     }
 
     void undo(){}

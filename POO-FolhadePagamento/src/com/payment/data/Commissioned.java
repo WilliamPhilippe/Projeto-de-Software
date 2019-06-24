@@ -42,6 +42,9 @@ public class Commissioned extends Employees {
 
     public void setSells(double sells){ this.sells += sells * this.commissionFee; }
 
+    public void setSells(double sells, int x){ this.sells = sells; }
+
+
     public double getCommissionFee(){ return commissionFee; }
 
     public double getSells(){ return sells; }

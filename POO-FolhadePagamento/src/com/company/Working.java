@@ -19,10 +19,10 @@ public class Working {
     private Stack<Employees> paymentsForwards;
     private boolean semanadepagamentos = false;
 
-    Working(){
+    Working(boolean flag){
         employees = new ArrayList<>();
         employees.add(null);
-        date = new CurrentData();
+        if (flag) date = new CurrentData();
         paymentsForwards = new Stack<>();
     }
 
@@ -192,6 +192,23 @@ public class Working {
 
     int getSyndicateNumbers(){ return syndicateNumbers; }
 
-    void incrementSyndicateNumber(int up){ this.syndicateNumbers += up; }
+    CurrentData getDate(){ return this.date; }
 
+    Stack<Employees> getPaymentsForwards(){ return this.paymentsForwards; }
+
+    boolean getSemanadePagamentos(){ return this.semanadepagamentos; }
+
+    void setArrayList(ArrayList<Employees> employees){ this.employees = employees; }
+
+    void setEmployeeNumbers(int employeeNumbers){ this.employeeNumbers = employeeNumbers; }
+
+    void setSyndicateNumbers(int syndicateNumbers){ this.syndicateNumbers = syndicateNumbers; }
+
+    void setDate(CurrentData date){ this.date = date; }
+
+    void setPaymentsForwards(Stack<Employees> paymentsForwards){ this.paymentsForwards = paymentsForwards; }
+
+    void setSemanadepagamentos(boolean semanadepagamentos){ this.semanadepagamentos = semanadepagamentos; }
+
+    void incrementSyndicateNumber(int up){ this.syndicateNumbers += up; }
 }

@@ -1,6 +1,5 @@
 package com.payment.data;
 
-import com.company.Edit;
 import com.company.Tools;
 
 public class Hourly extends Employees {
@@ -42,6 +41,8 @@ public class Hourly extends Employees {
             this.hourPayment += (8 * this.hourlyFee) + (hours - 8.0)*this.hourlyFee*1.5;
         }
     }
+
+    public void setHourPayment(double hours, int x){ this.hourPayment = hours; }
 
     public double getHourlyFee(){ return hourlyFee; }
 

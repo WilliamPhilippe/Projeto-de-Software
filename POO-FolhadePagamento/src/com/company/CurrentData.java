@@ -22,6 +22,11 @@ public class CurrentData {
         System.out.println(this.toString());
     }
 
+    CurrentData(int dia, int mes){
+        this.diaAtual = dia;
+        this.mesAtual = mes;
+    }
+
     void nextDay(){
         this.diaAtual ++;
         if( this.diaAtual == (month[mesAtual - 1] + 1) ) mesAtual ++;
@@ -44,6 +49,10 @@ public class CurrentData {
     int getDayOfWeek(){
         return this.diaAtual%7 == 0 ? 7 : this.diaAtual%7;
     }
+
+    int getOriginalMes(){ return this.mesAtual; }
+
+    int getOriginalDia(){ return this.diaAtual; }
 
     boolean isBusinessDay(){
         return !getNameDayOfWeek().equals("Domingo") && !getNameDayOfWeek().equals("Sabado");

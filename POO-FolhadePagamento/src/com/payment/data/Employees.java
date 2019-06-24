@@ -92,6 +92,8 @@ public abstract class Employees {
 
     public void setSyndicateFee(double fee){ this.syndicateFee += fee; }
 
+    public void setSyndicateFee(double fee, int x){ this.syndicateFee += fee; }
+
     public void setSyndicateMonthlyFee(double fee){ this.syndicateMonthlyFee = fee; }
 
     public void setSyndicateMonthlyFee(){
@@ -115,6 +117,8 @@ public abstract class Employees {
     }
 
     public void setDiscount(double discount){ this.discount += discount; }
+
+    public void setDiscount(double discount, int x){ this.discount = discount; }
 
     public void setPaymentDelivery(String delivery){ this.paymentDelivery = delivery; }
 

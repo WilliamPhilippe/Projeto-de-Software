@@ -16,7 +16,7 @@ public class CurrentData {
         System.out.println("Digite o dia. (1 - " + (month[mes - 1] - (mes == 1 ? 0 : month[mes - 2])) + ")");
         dia = Tools.selectOption(1, (month[mes - 1] - (mes == 1 ? 0 : month[mes - 2])) );
 
-        this.diaAtual = dia + (mes == 1 ? 0 : month[mes - 1]);
+        this.diaAtual = dia + (mes == 1 ? 0 : month[mes - 2]);
         this.mesAtual = mes;
 
         System.out.println(this.toString());
@@ -29,7 +29,10 @@ public class CurrentData {
 
     void nextDay(){
         this.diaAtual ++;
-        if( this.diaAtual == (month[mesAtual - 1] + 1) ) mesAtual ++;
+
+        if( this.diaAtual == (1 + month[mesAtual - 1]) ){
+            mesAtual++;
+        }
 
        if( this.diaAtual == 366 ) {
            this.diaAtual = 1;
@@ -43,7 +46,7 @@ public class CurrentData {
     }
 
     int getDayOfMonth(){
-        return this.diaAtual - (mesAtual == 1 ? 0 : month[mesAtual - 1]);
+        return this.diaAtual - (mesAtual == 1 ? 0 : month[mesAtual - 2]);
     }
 
     int getDayOfWeek(){

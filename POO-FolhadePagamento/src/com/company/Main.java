@@ -8,6 +8,7 @@ public class Main {
     static Stack<Working> undoStack = new Stack<>();
     static Stack<Working> redoStack = new Stack<>();
     static boolean flagUndo = true, flagRedo = true;
+    static CalendarPayment calendar = new CalendarPayment();
 
     public static void main(String[] args) {
 
@@ -78,12 +79,10 @@ public class Main {
                     }
                     break;
                 case 10:
-                    undoStack.push(Undo.undoWorking(company));
-                    company.paymentCalendar();
+                    calendar.selectDate(Tools.search(company.getArrayList()));
                     break;
                 case 11:
-                    undoStack.push(Undo.undoWorking(company));
-                    company.newPaymentCalendar();
+                    calendar.newDate();
                     break;
                 case 0:
                     return;

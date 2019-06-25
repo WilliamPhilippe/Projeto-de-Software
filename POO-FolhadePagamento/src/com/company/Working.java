@@ -171,19 +171,15 @@ public class Working {
                 if (businessDay) item.runPayment();
                 else paymentsForwards.push(item);
             }
+            if ( item.getPaymentPeriod().equals("monthly") && item.getDayOfPayment() > date.getDayOfMonth() && date.isLastDayOfMonth() ){
+                if (businessDay) item.runPayment();
+                else paymentsForwards.push(item);
+            }
         }
 
         semanadepagamentos = !semanadepagamentos;
         date.nextDay();
     }
-
-    void undo(){}
-
-    void redo(){}
-
-    void paymentCalendar(){}
-
-    void newPaymentCalendar(){}
 
     //Class Methods
     ArrayList<Employees> getArrayList(){ return employees; }

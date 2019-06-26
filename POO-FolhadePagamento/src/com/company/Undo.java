@@ -51,9 +51,7 @@ public class Undo {
     private static Stack<Employees> undoStack(Stack<Employees> old){
         Stack<Employees> nova = new Stack<>();
 
-        while (!old.empty()){
-            Employees emp = old.pop();
-
+        for (Employees emp : old){
             if (emp == null){
                 nova.push(null);
             }

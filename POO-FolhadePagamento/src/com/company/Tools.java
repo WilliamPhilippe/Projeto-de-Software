@@ -11,6 +11,12 @@ import java.util.Scanner;
 public class Tools {
 
     public static Employees search(ArrayList<Employees> employees){
+
+        if( employees.isEmpty() ){
+            System.out.println("Nao ha funcionarios cadastrados.");
+            throw new SearchFailureException();
+        }
+
         System.out.println("Voce deseja fazer uma busca por (1) nome ou (2) numero do funcionario? ");
         int option = selectOption(1, 2);
         Scanner input = new Scanner(System.in);
@@ -38,6 +44,7 @@ public class Tools {
         if (option == 2){
 
             while (true) {
+                System.out.println("Funcionarios cadastrados: " + (employees.size() - 1));
                 System.out.println("Digite o numero do funcionario.");
                 option = selectOption(0);
 

@@ -90,7 +90,7 @@ public class Commissioned extends Employees {
             System.out.println("Taxa Mensal do sindicato (proporcional): -" + mFee);
         }
         System.out.println("Recebimentos liquidos: " + (pSalary + pSells - (pDiscount + mFee)) );
-        System.out.println("Pagamento processado.");
+        System.out.println("Pagamento processado.\n");
 
         super.nullFee();
         this.sells = 0;

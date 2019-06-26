@@ -21,7 +21,7 @@ public class Working {
 
     Working(boolean flag){
         employees = new ArrayList<>();
-        employees.add(null);
+//        employees.add(null);
         if (flag) date = new CurrentData();
         paymentsForwards = new Stack<>();
     }
@@ -34,27 +34,29 @@ public class Working {
 
         option = Tools.selectOption(1, 3);
 
+        Employees emp = null;
+
         if (option == 1){
             employeeNumbers++;
-            Salaried salaried = new Salaried(employeeNumbers);
+            emp = new Salaried(employeeNumbers);
 
-            employees.add(salaried);
+            employees.add(emp);
         }
         if (option == 2){
             employeeNumbers++;
-            Commissioned commissioned = new Commissioned(employeeNumbers);
+            emp = new Commissioned(employeeNumbers);
 
-            employees.add(commissioned);
+            employees.add(emp);
         }
         if (option == 3){
             employeeNumbers++;
-            Hourly hourly = new Hourly(employeeNumbers);
+            emp = new Hourly(employeeNumbers);
 
-            employees.add(hourly);
+            employees.add(emp);
         }
 
         System.out.println("Funcionario criado.\n" +
-                employees.get(employeeNumbers).toString());
+                emp.toString());
     }
 
     void removeEmployee(){
@@ -71,6 +73,9 @@ public class Working {
 
         int index = employees.indexOf(emp);
         employees.set(index, null);
+
+        while (employees.remove(null));
+
         System.out.println("Funcionario removido.");
     }
 
@@ -177,7 +182,7 @@ public class Working {
             }
         }
 
-        semanadepagamentos = !semanadepagamentos;
+        if (date.getNameDayOfWeek().equals("Domingo")) semanadepagamentos = !semanadepagamentos;
         date.nextDay();
     }
 

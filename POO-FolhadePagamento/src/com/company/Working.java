@@ -21,7 +21,6 @@ public class Working {
 
     Working(boolean flag){
         employees = new ArrayList<>();
-//        employees.add(null);
         if (flag) date = new CurrentData();
         paymentsForwards = new Stack<>();
     }

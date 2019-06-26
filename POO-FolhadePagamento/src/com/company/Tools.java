@@ -44,7 +44,7 @@ public class Tools {
         if (option == 2){
 
             while (true) {
-                System.out.println("Funcionarios cadastrados: " + (employees.size() - 1));
+                System.out.println("Funcionarios cadastrados: " + employees.size());
                 System.out.println("Digite o numero do funcionario.");
                 option = selectOption(0);
 

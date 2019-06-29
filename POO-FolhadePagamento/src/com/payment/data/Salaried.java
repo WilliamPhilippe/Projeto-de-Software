@@ -50,6 +50,9 @@ public class Salaried extends Employees {
             System.out.println("Taxa Mensal do sindicato (proporcional metade): -" + mFee);
         }
         System.out.println("Recebimentos liquidos: " + (pSalary - (pDiscount + mFee)) );
+
+        super.printPaymentDelivery();
+
         System.out.println("Pagamento processado.\n");
 
         super.nullFee();

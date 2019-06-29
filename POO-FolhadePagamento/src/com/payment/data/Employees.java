@@ -146,6 +146,18 @@ public abstract class Employees {
         this.addressCity = addressCity;
     }
 
+    public void printPaymentDelivery(){
+        if(this.getPaymentDelivery().equals("deposit")){
+            System.out.println("Pagamento depositado em conta.");
+        }
+        else if(this.getPaymentDelivery().equals("mail")){
+            System.out.println("Cheque enviado por email.");
+        }
+        else{
+            System.out.println("Cheque sera entregue em maos.");
+        }
+    }
+
     public String toString(){
         return "Nome: " + this.getName() + "\nNumero: " + this.getEmployeeNumber();
     }

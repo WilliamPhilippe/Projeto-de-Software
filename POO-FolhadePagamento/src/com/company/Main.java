@@ -1,5 +1,8 @@
 package com.company;
 
+import com.ExceptionsOwn.SearchFailureException;
+import com.payment.data.Employees;
+
 import java.util.Stack;
 
 public class Main {
@@ -79,7 +82,16 @@ public class Main {
                     }
                     break;
                 case 10:
-                    calendar.selectDate(Tools.search(company.getArrayList()));
+                    System.out.println("Selecione o funcionario.");
+                    Employees emp;
+                    try {
+                        emp = Tools.search(company.getArrayList());
+                    }
+                    catch (SearchFailureException e){
+                        System.out.println(e.getMessage());
+                        break;
+                    }
+                    calendar.selectDate(emp);
                     break;
                 case 11:
                     calendar.newDate();

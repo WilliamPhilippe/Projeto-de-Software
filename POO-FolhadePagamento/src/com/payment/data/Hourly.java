@@ -82,6 +82,9 @@ public class Hourly extends Employees {
             System.out.println("Taxa Mensal do sindicato (proporcional): -" + mFee);
         }
         System.out.println("Recebimentos liquidos: " + (this.hourPayment - (pDiscount + mFee)) );
+
+        super.printPaymentDelivery();
+
         System.out.println("Pagamento processado.\n");
 
         super.nullFee();

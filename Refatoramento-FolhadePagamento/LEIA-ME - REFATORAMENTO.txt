@@ -1,0 +1,5 @@
+PADRÕES DE PROJETOS IMPLEMENTADOS:
+
+MEMENTO:
+	Criação das classes Memento e CareTaker e refatoração de todo o código.
+

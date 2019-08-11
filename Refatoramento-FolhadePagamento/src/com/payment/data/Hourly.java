@@ -4,8 +4,7 @@ import com.company.Tools;
 
 public class Hourly extends Employees {
 
-    private double hourlyFee = 0;
-    private double hourPayment = 0;
+
 
     public Hourly(int employeeNumber){
         super.setName();
@@ -22,7 +21,7 @@ public class Hourly extends Employees {
     public Hourly(){}
 
     public void setHourlyFee(double fee){
-        this.hourlyFee = fee;
+        this.percentSalary = fee;
     }
 
     public void setHourlyFee(){
@@ -35,18 +34,18 @@ public class Hourly extends Employees {
 
     public void setHourPayment(double hours){
         if (hours <= 8){
-            this.hourPayment += hours * this.hourlyFee;
+            this.salary += hours * this.percentSalary;
         }
         else{
-            this.hourPayment += (8 * this.hourlyFee) + (hours - 8.0)*this.hourlyFee*1.5;
+            this.salary += (8 * this.percentSalary) + (hours - 8.0)*this.percentSalary *1.5;
         }
     }
 
-    public void setHourPayment(double hours, int x){ this.hourPayment = hours; }
+    public void setHourPayment(double hours, int x){ this.salary = hours; }
 
-    public double getHourlyFee(){ return hourlyFee; }
+    public double getHourlyFee(){ return percentSalary; }
 
-    public double getHourPayment(){ return hourPayment; }
+    public double getHourPayment(){ return salary; }
 
     @Override
     public void runPayment(int day) {
@@ -75,20 +74,20 @@ public class Hourly extends Employees {
             mFee += super.getSyndicateMonthlyFee();
         }
 
-        System.out.println("Salario bruto por horas trabalhadas: " + this.hourPayment);
+        System.out.println("Salario bruto por horas trabalhadas: " + this.salary);
         System.out.println("Discontos: -" + super.getDiscount());
         if(super.getSyndicateIs()) {
             System.out.println("Taxas de servico: -" + super.getSyndicateFee());
             System.out.println("Taxa Mensal do sindicato (proporcional): -" + mFee);
         }
-        System.out.println("Recebimentos liquidos: " + (this.hourPayment - (pDiscount + mFee)) );
+        System.out.println("Recebimentos liquidos: " + (this.salary - (pDiscount + mFee)) );
 
         super.printPaymentDelivery();
 
         System.out.println("Pagamento processado.\n");
 
         super.nullFee();
-        this.hourPayment = 0;
+        this.salary = 0;
 
         try { Thread.sleep(1500); }
         catch (InterruptedException e){ e.getMessage(); }

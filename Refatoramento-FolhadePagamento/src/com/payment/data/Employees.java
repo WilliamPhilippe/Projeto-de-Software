@@ -21,7 +21,8 @@ public abstract class Employees {
     //payment data
     private String paymentPeriod = null;       // monthly - weekly - twoweekly
     private int dayOfPayment = 0;              // monthly last day "0", dom 1 sab 7
-    private double salary = 0;
+    double salary = 0;
+    double percentSalary = 0;
     private double discount = 0;
     private String paymentDelivery = null;     // hands, mail, doposit
 

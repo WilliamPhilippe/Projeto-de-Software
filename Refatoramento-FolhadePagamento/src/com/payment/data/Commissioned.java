@@ -4,7 +4,6 @@ import com.company.Tools;
 
 public class Commissioned extends Employees {
 
-    private double commissionFee = 0;
     private double sells = 0;
 
     public Commissioned(){}
@@ -30,7 +29,7 @@ public class Commissioned extends Employees {
         System.out.println("Comissao definida.");
     }
 
-    public void setCommissionFee(double commissionFee){ this.commissionFee = commissionFee; }
+    public void setCommissionFee(double commissionFee){ this.percentSalary = commissionFee; }
 
     public void setSells(){
         System.out.println("Digite as vendas deste funcionario.\n" +
@@ -40,12 +39,12 @@ public class Commissioned extends Employees {
         System.out.println("Vendas definidas.");
     }
 
-    public void setSells(double sells){ this.sells += sells * this.commissionFee; }
+    public void setSells(double sells){ this.sells += sells * this.percentSalary; }
 
     public void setSells(double sells, int x){ this.sells = sells; }
 
 
-    public double getCommissionFee(){ return commissionFee; }
+    public double getCommissionFee(){ return percentSalary; }
 
     public double getSells(){ return sells; }
 
@@ -67,7 +66,7 @@ public class Commissioned extends Employees {
         double pSalary = 0;
         double pDiscount = super.getDiscount() + super.getSyndicateFee();
         double mFee = 0;
-        double pSells = this.getSells()*this.commissionFee;
+        double pSells = this.getSells()*this.percentSalary;
 
         if( super.getPaymentPeriod().equals("weekly")){
             pSalary = super.getSalary()*0.25;

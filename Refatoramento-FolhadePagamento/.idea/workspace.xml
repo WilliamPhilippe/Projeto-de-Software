@@ -7,13 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d36d3a07-e212-4377-811b-3d5933d9ce4c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/memento/CareTaker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/memento/Memento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POO-FolhadePagamento/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO-FolhadePagamento/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Undo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Copy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/payment/data/Commissioned.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/payment/data/Commissioned.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/payment/data/Employees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/payment/data/Employees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/payment/data/Hourly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/payment/data/Hourly.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,7 +23,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="595">
@@ -71,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/payment/data/Employees.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3200">
-              <caret line="166" column="38" selection-start-line="166" selection-start-column="38" selection-end-line="166" selection-end-column="38" />
+            <state relative-caret-position="480">
+              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1777#1981#0" />
@@ -84,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/payment/data/Commissioned.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1740">
-              <caret line="93" column="37" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
+            <state relative-caret-position="120">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="method#setCommissionFee#0;class#Commissioned#0" />
               </folding>
@@ -130,11 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/payment/data/Hourly.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+            <state relative-caret-position="140">
+              <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -168,16 +164,16 @@
         <option value="$PROJECT_DIR$/src/com/company/Working.java" />
         <option value="$PROJECT_DIR$/src/com/company/TimeCard.java" />
         <option value="$PROJECT_DIR$/src/com/ExceptionsOwn/OutOfPatternException.java" />
-        <option value="$PROJECT_DIR$/src/com/payment/data/Employees.java" />
-        <option value="$PROJECT_DIR$/src/com/payment/data/Hourly.java" />
         <option value="$PROJECT_DIR$/src/com/payment/data/Salaried.java" />
-        <option value="$PROJECT_DIR$/src/com/payment/data/Commissioned.java" />
         <option value="$PROJECT_DIR$/src/com/company/Memento.java" />
         <option value="$PROJECT_DIR$/src/com/company/Undo.java" />
         <option value="$PROJECT_DIR$/src/com/company/Copy.java" />
         <option value="$PROJECT_DIR$/src/com/memento/Memento.java" />
         <option value="$PROJECT_DIR$/src/com/memento/CareTaker.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/payment/data/Employees.java" />
+        <option value="$PROJECT_DIR$/src/com/payment/data/Commissioned.java" />
+        <option value="$PROJECT_DIR$/src/com/payment/data/Hourly.java" />
       </list>
     </option>
   </component>
@@ -223,7 +219,7 @@
               <item name="Refatoramento-FolhadePagamento" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="memento" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -521,27 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/payment/data/Employees.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3200">
-          <caret line="166" column="38" selection-start-line="166" selection-start-column="38" selection-end-line="166" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1777#1981#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/payment/data/Commissioned.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1740">
-          <caret line="93" column="37" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
-          <folding>
-            <element signature="method#setCommissionFee#0;class#Commissioned#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Edit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
@@ -570,13 +545,6 @@
           <folding>
             <element signature="method#nextDay#0;class#CurrentData#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/payment/data/Hourly.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -626,6 +594,34 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/payment/data/Commissioned.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="method#setCommissionFee#0;class#Commissioned#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/payment/data/Employees.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1777#1981#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/payment/data/Hourly.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
         </state>
       </provider>
     </entry>

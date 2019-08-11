@@ -6,13 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d36d3a07-e212-4377-811b-3d5933d9ce4c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/company/Copy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Copy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/payment/data/Commissioned.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/payment/data/Commissioned.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/payment/data/Employees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/payment/data/Employees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/payment/data/Hourly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/payment/data/Hourly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/payment/data/Salaried.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/payment/data/Salaried.java" afterDir="false" />
-    </list>
+    <list default="true" id="d36d3a07-e212-4377-811b-3d5933d9ce4c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

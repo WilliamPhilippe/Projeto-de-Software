@@ -4,6 +4,7 @@ MEMENTO:
 	Criação das classes Memento e CareTaker e refatoração de todo o código.
 
 Template e Extract Method:
-	Eu usava hourlyFee e commisionFee para a taxa por hora e comissão, respectivamente. Transformei isso em percentSalary na classe Employees e agora eles tem usos diferentes em cada subclasse.
+	Eu usava hourlyFee e commisionFee para a taxa por hora e comissão, respectivamente. Transformei isso em percentSalary 
+na classe Employees e agora eles tem usos diferentes em cada subclasse.
 	Também mudei o que antes era o salário do horista, para usar a variável salary para geral.
 	Para tais mudanças, alterei o controlador de acesso para package.

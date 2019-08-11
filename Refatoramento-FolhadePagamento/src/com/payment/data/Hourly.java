@@ -92,4 +92,12 @@ public class Hourly extends Employees {
         try { Thread.sleep(1500); }
         catch (InterruptedException e){ e.getMessage(); }
     }
+
+    public void setOwnCopy(Employees employee){
+        this.setHourlyFee(((Hourly) employee).getHourlyFee());
+        this.setHourPayment( ((Hourly) employee).getHourPayment(), 1 );
+    }
+
+    public Employees getNovoOfClass() { return new Hourly();}
+
 }

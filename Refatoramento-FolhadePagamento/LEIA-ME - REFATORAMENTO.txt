@@ -8,3 +8,15 @@ Template e Extract Method:
 na classe Employees e agora eles tem usos diferentes em cada subclasse.
 	Também mudei o que antes era o salário do horista, para usar a variável salary para geral.
 	Para tais mudanças, alterei o controlador de acesso para package.
+
+COMMAND:
+	No Undo, no momento de fazer a copia dos empregados, eu tinha que fazer
+um método de cópia específico para cada empregado.
+	Resolvi isso com um comando. Eu criei a função getNovoOfClass,
+que, com base no funcionário que tá sendo copiado, retorna um novo
+funcionário do mesmo tipo. E esse funcionário é associado a um
+"Employees novo". 
+	Este design pattern pode ser visto na função copyEmployee em Copy,
+e em todas as outras funções de cópias. Além disso, cada subclass
+de funcionário implementa os metodos abstratos getNovoOfClass e 
+setOwnCopy. 

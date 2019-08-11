@@ -100,4 +100,12 @@ public class Commissioned extends Employees {
         try { Thread.sleep(1500); }
         catch (InterruptedException e){ e.getMessage(); }
     }
+
+    public void setOwnCopy(Employees employee){
+        this.setSells(((Commissioned) employee).getSells(), 1);
+        this.setCommissionFee(((Commissioned) employee).getCommissionFee());
+    }
+
+    public Employees getNovoOfClass() { return new Commissioned();}
+
 }

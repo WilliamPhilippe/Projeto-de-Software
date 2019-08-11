@@ -60,4 +60,10 @@ public class Salaried extends Employees {
         try { Thread.sleep(1500); }
         catch (InterruptedException e){ e.getMessage(); }
     }
+
+    public void setOwnCopy(Employees employee){
+        this.setSalary(((Salaried) employee).getSalary());
+    }
+
+    public Employees getNovoOfClass() { return new Salaried();}
 }

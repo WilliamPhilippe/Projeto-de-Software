@@ -29,20 +29,13 @@ public class Copy {
     private static ArrayList<Employees> copyArrayList(ArrayList<Employees> old){
         ArrayList<Employees> novo = new ArrayList<>();
 
-        for(Employees item : old){
-            if (item == null){
+        for (Employees emp : old){
+            if (emp == null){
                 novo.add(null);
             }
-            else if(item instanceof Hourly){
-                novo.add(copyHourly( (Hourly) item ));
+            else{
+                novo.add(copyEmployee(emp));
             }
-            else if(item instanceof Commissioned){
-                novo.add(copyCommissioned( (Commissioned) item ));
-            }
-            else if(item instanceof Salaried){
-                novo.add(copySalaried( (Salaried) item ));
-            }
-            else System.out.println("ERROR IN UNDOARRAYLIST");
         }
 
         return novo;
@@ -55,49 +48,17 @@ public class Copy {
             if (emp == null){
                 nova.push(null);
             }
-            else if(emp instanceof Hourly){
-                nova.push(copyHourly( (Hourly) emp ));
+            else{
+                nova.push(copyEmployee(emp));
             }
-            else if(emp instanceof Commissioned){
-                nova.push(copyCommissioned( (Commissioned) emp ));
-            }
-            else if(emp instanceof Salaried){
-                nova.push(copySalaried( (Salaried) emp ));
-            }
-            else System.out.println("ERROR IN UNDOSTACK");
         }
 
         return nova;
     }
 
-    private static Hourly copyHourly(Hourly old){
-        Hourly novo = new Hourly();
+    private static Employees copyEmployee(Employees old){
+        Employees novo = old.getNovoOfClass();
 
-        novo.setHourlyFee(old.getHourlyFee());
-        novo.setHourPayment(old.getHourPayment(), 1);
-
-        copyEmployee(novo, old);
-        return novo;
-    }
-
-    private static Commissioned copyCommissioned(Commissioned old){
-        Commissioned novo = new Commissioned();
-
-        novo.setSells(old.getSells(), 1);
-        novo.setCommissionFee(old.getCommissionFee());
-
-        copyEmployee(novo, old);
-        return novo;
-    }
-
-    private static Salaried copySalaried(Salaried old){
-        Salaried novo = new Salaried();
-
-        copyEmployee(novo, old);
-        return novo;
-    }
-
-    private static void copyEmployee(Employees novo, Employees old){
         novo.setName(old.getName());
         novo.setEmployeeNumber(old.getEmployeeNumber());
         novo.setEmployeeStatus(old.getEmployeeStatus());
@@ -114,6 +75,10 @@ public class Copy {
         novo.setDiscount(old.getDiscount(), 1);
         novo.setSalary(old.getSalary());
 
+        novo.setOwnCopy(old);
+
         novo.setAddress(old.getAddressNumber(), old.getAddressStreet(), old.getAddressCity(), old.getAddressState());
+
+        return novo;
     }
 }

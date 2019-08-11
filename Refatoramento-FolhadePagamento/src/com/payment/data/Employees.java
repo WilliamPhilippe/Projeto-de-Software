@@ -167,6 +167,10 @@ public abstract class Employees {
 
     public abstract void runPayment();
 
+    public abstract void setOwnCopy(Employees employee);
+
+    public abstract Employees getNovoOfClass();
+
     void nullFee(){
         this.discount = 0;
         this.syndicateFee = 0;

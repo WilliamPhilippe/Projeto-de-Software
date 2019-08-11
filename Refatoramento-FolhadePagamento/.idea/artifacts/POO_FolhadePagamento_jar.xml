@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="POO-FolhadePagamento:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/POO_FolhadePagamento_jar</output-path>
+    <root id="archive" name="POO-FolhadePagamento.jar">
+      <element id="module-output" name="POO-FolhadePagamento" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

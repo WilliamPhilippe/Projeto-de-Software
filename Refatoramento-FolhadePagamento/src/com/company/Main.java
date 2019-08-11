@@ -1,15 +1,14 @@
 package com.company;
 
 import com.ExceptionsOwn.SearchFailureException;
+import com.memento.CareTaker;
+import com.memento.Memento;
 import com.payment.data.Employees;
-
-import java.util.Stack;
 
 public class Main {
 
     private static Working company = new Working(true);
-    static Stack<Working> undoStack = new Stack<>();
-    static Stack<Working> redoStack = new Stack<>();
+    private static CareTaker careTaker = new CareTaker();
     static boolean flagUndo = true, flagRedo = true;
     static CalendarPayment calendar = new CalendarPayment();
 
@@ -36,48 +35,46 @@ public class Main {
 
             switch (option) {
                 case 1:
-                    undoStack.push(Undo.undoWorking(company));
+                    careTaker.pushUndo(new Memento(company));
                     company.addEmployee();
                     break;
                 case 2:
-                    undoStack.push(Undo.undoWorking(company));
+                    careTaker.pushUndo(new Memento(company));
                     company.removeEmployee();
                     break;
                 case 3:
-                    undoStack.push(Undo.undoWorking(company));
+                    careTaker.pushUndo(new Memento(company));
                     company.addTimeCard();
                     break;
                 case 4:
-                    undoStack.push(Undo.undoWorking(company));
+                    careTaker.pushUndo(new Memento(company));
                     company.addSells();
                     break;
                 case 5:
-                    undoStack.push(Undo.undoWorking(company));
+                    careTaker.pushUndo(new Memento(company));
                     company.addServiceFee();
                     break;
                 case 6:
-                    undoStack.push(Undo.undoWorking(company));
+                    careTaker.pushUndo(new Memento(company));
                     Edit.edition(company);
                     break;
                 case 7:
-                    undoStack.push(Undo.undoWorking(company));
+                    careTaker.pushUndo(new Memento(company));
                     company.runPayment();
                     break;
                 case 8:
-                    if(undoStack.empty()) System.out.println("Nao ha alteracoes a serem desfeitas.");
+                    if(careTaker.undoIsEmpty()) System.out.println("Nao ha alteracoes a serem desfeitas.");
                     else{
-                        redoStack.push(Undo.undoWorking(company));
-                        company = undoStack.pop();
+                        company = careTaker.runUndo(new Memento(company)).getState();
                         System.out.println("Alteracao desfeita.");
                         flagUndo = false;
                         flagRedo = false;
                     }
                     break;
                 case 9:
-                    undoStack.push(Undo.undoWorking(company));
-                    if (redoStack.empty()) System.out.println("Nao ha alteracoes a serem refeitas.");
+                    if (careTaker.redoIsEmpty()) System.out.println("Nao ha alteracoes a serem refeitas.");
                     else{
-                        company = redoStack.pop();
+                        company = careTaker.runRedo(new Memento(company)).getState();
                         flagRedo = false;
                     }
                     break;
@@ -101,7 +98,7 @@ public class Main {
             }
 //
             if (flagRedo){
-                redoStack.clear();
+                careTaker.clearRedo();
             }
             else flagRedo = true;
 

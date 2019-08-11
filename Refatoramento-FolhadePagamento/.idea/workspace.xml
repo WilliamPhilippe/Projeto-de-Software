@@ -6,7 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d36d3a07-e212-4377-811b-3d5933d9ce4c" name="Default Changelist" comment="" />
+    <list default="true" id="d36d3a07-e212-4377-811b-3d5933d9ce4c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/memento/CareTaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/memento/Memento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO-FolhadePagamento/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO-FolhadePagamento/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Undo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Copy.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
+            <state relative-caret-position="595">
+              <caret line="100" selection-start-line="100" selection-end-line="100" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,45 +40,30 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Working.java">
+        <entry file="file://$PROJECT_DIR$/src/com/memento/CareTaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="60" column="25" lean-forward="true" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+            <state relative-caret-position="520">
+              <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#Working#0;class#Working#0" />
-                <element signature="method#addEmployee#0;class#Working#0" />
-                <element signature="method#removeEmployee#0;class#Working#0" />
-                <element signature="method#addTimeCard#0;class#Working#0" />
-                <element signature="method#addSells#0;class#Working#0" />
-                <element signature="method#addServiceFee#0;class#Working#0" />
-                <element signature="method#runPayment#0;class#Working#0" />
+                <element signature="e#213#214#0" expanded="true" />
+                <element signature="e#251#252#0" expanded="true" />
+                <element signature="e#306#307#0" expanded="true" />
+                <element signature="e#337#338#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Undo.java">
+        <entry file="file://$PROJECT_DIR$/src/com/memento/Memento.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="898">
-              <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
+            <state relative-caret-position="180">
+              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#undoDate#0;class#Undo#0" />
-                <element signature="method#undoCommissioned#0;class#Undo#0" />
-                <element signature="method#undoSalaried#0;class#Undo#0" />
-                <element signature="method#undoEmployee#0;class#Undo#0" />
+                <element signature="e#160#161#0" expanded="true" />
+                <element signature="e#213#214#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/payment/data/Salaried.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1060">
-              <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -171,16 +164,20 @@
         <option value="$PROJECT_DIR$/src/com/company/CalendarSet.java" />
         <option value="$PROJECT_DIR$/src/com/company/CalendarPayment.java" />
         <option value="$PROJECT_DIR$/src/com/company/CurrentData.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Undo.java" />
         <option value="$PROJECT_DIR$/src/com/company/Tools.java" />
         <option value="$PROJECT_DIR$/src/com/company/Working.java" />
         <option value="$PROJECT_DIR$/src/com/company/TimeCard.java" />
         <option value="$PROJECT_DIR$/src/com/ExceptionsOwn/OutOfPatternException.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/payment/data/Employees.java" />
         <option value="$PROJECT_DIR$/src/com/payment/data/Hourly.java" />
         <option value="$PROJECT_DIR$/src/com/payment/data/Salaried.java" />
         <option value="$PROJECT_DIR$/src/com/payment/data/Commissioned.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Memento.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Undo.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Copy.java" />
+        <option value="$PROJECT_DIR$/src/com/memento/Memento.java" />
+        <option value="$PROJECT_DIR$/src/com/memento/CareTaker.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
       </list>
     </option>
   </component>
@@ -200,40 +197,33 @@
         <subPane>
           <expand>
             <path>
-              <item name="POO-FolhadePagamento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="POO-FolhadePagamento" type="462c0819:PsiDirectoryNode" />
+              <item name="Refatoramento-FolhadePagamento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Refatoramento-FolhadePagamento" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="POO-FolhadePagamento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="POO-FolhadePagamento" type="462c0819:PsiDirectoryNode" />
+              <item name="Refatoramento-FolhadePagamento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Refatoramento-FolhadePagamento" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="POO-FolhadePagamento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="POO-FolhadePagamento" type="462c0819:PsiDirectoryNode" />
+              <item name="Refatoramento-FolhadePagamento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Refatoramento-FolhadePagamento" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="POO-FolhadePagamento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="POO-FolhadePagamento" type="462c0819:PsiDirectoryNode" />
+              <item name="Refatoramento-FolhadePagamento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Refatoramento-FolhadePagamento" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="POO-FolhadePagamento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="POO-FolhadePagamento" type="462c0819:PsiDirectoryNode" />
+              <item name="Refatoramento-FolhadePagamento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Refatoramento-FolhadePagamento" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ExceptionsOwn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="POO-FolhadePagamento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="POO-FolhadePagamento" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="memento" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -299,7 +289,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31823027" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3219616" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -507,6 +497,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Working.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Working#0;class#Working#0" />
+            <element signature="method#addEmployee#0;class#Working#0" />
+            <element signature="method#removeEmployee#0;class#Working#0" />
+            <element signature="method#addTimeCard#0;class#Working#0" />
+            <element signature="method#addSells#0;class#Working#0" />
+            <element signature="method#addServiceFee#0;class#Working#0" />
+            <element signature="method#runPayment#0;class#Working#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/payment/data/Salaried.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1060">
@@ -573,41 +580,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Undo.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Copy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="898">
-          <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
+        <state relative-caret-position="1660">
+          <caret line="99" column="28" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#undoDate#0;class#Undo#0" />
-            <element signature="method#undoCommissioned#0;class#Undo#0" />
-            <element signature="method#undoSalaried#0;class#Undo#0" />
+            <element signature="method#copyData#0;class#Undo#0" />
+            <element signature="method#copyCommissioned#0;class#Undo#0" />
+            <element signature="method#copySalaried#0;class#Undo#0" />
             <element signature="method#undoEmployee#0;class#Undo#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Working.java">
+    <entry file="file://$PROJECT_DIR$/src/com/memento/Memento.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="60" column="25" lean-forward="true" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+        <state relative-caret-position="180">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#Working#0;class#Working#0" />
-            <element signature="method#addEmployee#0;class#Working#0" />
-            <element signature="method#removeEmployee#0;class#Working#0" />
-            <element signature="method#addTimeCard#0;class#Working#0" />
-            <element signature="method#addSells#0;class#Working#0" />
-            <element signature="method#addServiceFee#0;class#Working#0" />
-            <element signature="method#runPayment#0;class#Working#0" />
+            <element signature="e#160#161#0" expanded="true" />
+            <element signature="e#213#214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/memento/CareTaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+          <folding>
+            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
+        <state relative-caret-position="595">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

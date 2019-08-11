@@ -8,25 +8,25 @@ import com.payment.data.Salaried;
 import java.util.ArrayList;
 import java.util.Stack;
 
-public class Undo {
-    public static Working undoWorking(Working old){
+public class Copy {
+    public static Working copyWorking(Working old){
         Working nova = new Working(false);
         nova.setEmployeeNumbers(old.getEmployeeNumbers());
         nova.setSemanadepagamentos(old.getSemanadePagamentos());
         nova.setSyndicateNumbers(old.getSyndicateNumbers());
 
-        nova.setDate(undoDate(old.getDate()));
-        nova.setArrayList(undoArrayList(old.getArrayList()));
-        nova.setPaymentsForwards(undoStack(old.getPaymentsForwards()));
+        nova.setDate(copyData(old.getDate()));
+        nova.setArrayList(copyArrayList(old.getArrayList()));
+        nova.setPaymentsForwards(copyStack(old.getPaymentsForwards()));
         return nova;
     }
 
-    private static CurrentData undoDate(CurrentData old){
+    private static CurrentData copyData(CurrentData old){
         CurrentData nova = new CurrentData(old.getOriginalDia(), old.getOriginalMes());
         return nova;
     }
 
-    private static ArrayList<Employees> undoArrayList(ArrayList<Employees> old){
+    private static ArrayList<Employees> copyArrayList(ArrayList<Employees> old){
         ArrayList<Employees> novo = new ArrayList<>();
 
         for(Employees item : old){
@@ -34,13 +34,13 @@ public class Undo {
                 novo.add(null);
             }
             else if(item instanceof Hourly){
-                novo.add(undoHourly( (Hourly) item ));
+                novo.add(copyHourly( (Hourly) item ));
             }
             else if(item instanceof Commissioned){
-                novo.add(undoCommissioned( (Commissioned) item ));
+                novo.add(copyCommissioned( (Commissioned) item ));
             }
             else if(item instanceof Salaried){
-                novo.add(undoSalaried( (Salaried) item ));
+                novo.add(copySalaried( (Salaried) item ));
             }
             else System.out.println("ERROR IN UNDOARRAYLIST");
         }
@@ -48,7 +48,7 @@ public class Undo {
         return novo;
     }
 
-    private static Stack<Employees> undoStack(Stack<Employees> old){
+    private static Stack<Employees> copyStack(Stack<Employees> old){
         Stack<Employees> nova = new Stack<>();
 
         for (Employees emp : old){
@@ -56,13 +56,13 @@ public class Undo {
                 nova.push(null);
             }
             else if(emp instanceof Hourly){
-                nova.push(undoHourly( (Hourly) emp ));
+                nova.push(copyHourly( (Hourly) emp ));
             }
             else if(emp instanceof Commissioned){
-                nova.push(undoCommissioned( (Commissioned) emp ));
+                nova.push(copyCommissioned( (Commissioned) emp ));
             }
             else if(emp instanceof Salaried){
-                nova.push(undoSalaried( (Salaried) emp ));
+                nova.push(copySalaried( (Salaried) emp ));
             }
             else System.out.println("ERROR IN UNDOSTACK");
         }
@@ -70,34 +70,34 @@ public class Undo {
         return nova;
     }
 
-    private static Hourly undoHourly(Hourly old){
+    private static Hourly copyHourly(Hourly old){
         Hourly novo = new Hourly();
 
         novo.setHourlyFee(old.getHourlyFee());
         novo.setHourPayment(old.getHourPayment(), 1);
 
-        undoEmployee(novo, old);
+        copyEmployee(novo, old);
         return novo;
     }
 
-    private static Commissioned undoCommissioned(Commissioned old){
+    private static Commissioned copyCommissioned(Commissioned old){
         Commissioned novo = new Commissioned();
 
         novo.setSells(old.getSells(), 1);
         novo.setCommissionFee(old.getCommissionFee());
 
-        undoEmployee(novo, old);
+        copyEmployee(novo, old);
         return novo;
     }
 
-    private static Salaried undoSalaried(Salaried old){
+    private static Salaried copySalaried(Salaried old){
         Salaried novo = new Salaried();
 
-        undoEmployee(novo, old);
+        copyEmployee(novo, old);
         return novo;
     }
 
-    private static void undoEmployee(Employees novo, Employees old){
+    private static void copyEmployee(Employees novo, Employees old){
         novo.setName(old.getName());
         novo.setEmployeeNumber(old.getEmployeeNumber());
         novo.setEmployeeStatus(old.getEmployeeStatus());
